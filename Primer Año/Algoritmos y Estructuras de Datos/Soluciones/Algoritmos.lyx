@@ -1,0 +1,3159 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\begin_modules
+tcolorbox
+\end_modules
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style french
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Algoritmos y Estructuras de Datos
+\end_layout
+
+\begin_layout Author
+Práctica 1
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Estructura secuencial
+\end_layout
+
+\begin_layout Enumerate
+Modificando el siguiente ejemplo, agregar el cálculo del producto e informar
+ los resultados:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Imagenes/ej1.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Imagenes/ej1-1.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Python:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+N1       = int(input())
+\end_layout
+
+\begin_layout Plain Layout
+
+N2       = int(input())
+\end_layout
+
+\begin_layout Plain Layout
+
+SUMA     = N1 + N2
+\end_layout
+
+\begin_layout Plain Layout
+
+PRODUCTO = N2 * N2
+\end_layout
+
+\begin_layout Plain Layout
+
+print(SUMA)
+\end_layout
+
+\begin_layout Plain Layout
+
+print(PRODUCTO)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Describa lo que realiza el diagrama de Chapin.
+ Indicar el valor que se muestra si las variables tendrían los siguientes
+ valores: 
+\begin_inset Formula $A=10$
+\end_inset
+
+, 
+\begin_inset Formula $B=20$
+\end_inset
+
+ y 
+\begin_inset Formula $C=2$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Imagenes/ej2.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Standard
+Muestra en la pantalla el resultado de sumar los primeros dos números ingresados
+ y dividirlos por el tercero.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Dados como datos cinco números obtener el promedio de los mismos e informar
+ el resultado.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Imagenes/ej1-3.png
+	scale 40
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Python:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+NUMERO1  = int(input(
+\begin_inset Quotes eld
+\end_inset
+
+Ingrese el primer numero: 
+\begin_inset Quotes eld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+NUMERO2  = int(input(
+\begin_inset Quotes eld
+\end_inset
+
+Ingrese el segundo numero: 
+\begin_inset Quotes eld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+NUMERO3  = int(input(
+\begin_inset Quotes eld
+\end_inset
+
+Ingrese el tercer numero: 
+\begin_inset Quotes eld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+NUMERO4  = int(input(
+\begin_inset Quotes eld
+\end_inset
+
+Ingrese el cuarto numero: 
+\begin_inset Quotes eld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+NUMERO5  = int(input(
+\begin_inset Quotes eld
+\end_inset
+
+Ingrese el quinto numero: 
+\begin_inset Quotes eld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+SUMA     = NUMERO1 + NUMERO2 + NUMERO3 + NUMERO4 + NUMERO5
+\end_layout
+
+\begin_layout Plain Layout
+
+PROMEDIO = SUMA / 5
+\end_layout
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes erd
+\end_inset
+
+El promedio es:
+\begin_inset Quotes erd
+\end_inset
+
+, PROMEDIO)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Color Box
+status open
+
+\begin_layout Plain Layout
+Existen varias formas de resolver cada algoritmo.
+ La siguiente por ejemplo, es equivalente a la anterior pero utiliza una
+ sola variable:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=Python,fontsize={\footnotesize}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+PROMEDIO  = int(input(
+\begin_inset Quotes eld
+\end_inset
+
+Ingrese el primer numero: 
+\begin_inset Quotes eld
+\end_inset
+
+))  / 5
+\end_layout
+
+\begin_layout Plain Layout
+
+PROMEDIO += int(input(
+\begin_inset Quotes eld
+\end_inset
+
+Ingrese el segundo numero: 
+\begin_inset Quotes eld
+\end_inset
+
+)) / 5
+\end_layout
+
+\begin_layout Plain Layout
+
+PROMEDIO += int(input(
+\begin_inset Quotes eld
+\end_inset
+
+Ingrese el tercer numero: 
+\begin_inset Quotes eld
+\end_inset
+
+))  / 5
+\end_layout
+
+\begin_layout Plain Layout
+
+PROMEDIO += int(input(
+\begin_inset Quotes eld
+\end_inset
+
+Ingrese el cuarto numero: 
+\begin_inset Quotes eld
+\end_inset
+
+))  / 5
+\end_layout
+
+\begin_layout Plain Layout
+
+PROMEDIO += int(input(
+\begin_inset Quotes eld
+\end_inset
+
+Ingrese el quinto numero: 
+\begin_inset Quotes eld
+\end_inset
+
+))  / 5
+\end_layout
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes erd
+\end_inset
+
+El promedio es:
+\begin_inset Quotes erd
+\end_inset
+
+, PROMEDIO)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Dados como dos números obtener su suma, resta, multiplicación y división.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Imagenes/ej1-4.png
+	scale 32
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Python:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+NUMERO1  = int(input(
+\begin_inset Quotes eld
+\end_inset
+
+Ingrese el primer numero: 
+\begin_inset Quotes eld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+NUMERO2  = int(input(
+\begin_inset Quotes eld
+\end_inset
+
+Ingrese el segundo numero: 
+\begin_inset Quotes eld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+SUMA     = NUMERO1 + NUMERO2
+\end_layout
+
+\begin_layout Plain Layout
+
+RESTA    = NUMERO1 - NUMERO2
+\end_layout
+
+\begin_layout Plain Layout
+
+PRODUCTO = NUMERO1 * NUMERO2
+\end_layout
+
+\begin_layout Plain Layout
+
+DIVISION = NUMERO1 / NUMERO2
+\end_layout
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes erd
+\end_inset
+
+La suma es:
+\begin_inset Quotes erd
+\end_inset
+
+, SUMA)
+\end_layout
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes erd
+\end_inset
+
+La resta es:
+\begin_inset Quotes erd
+\end_inset
+
+, RESTA)
+\end_layout
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes erd
+\end_inset
+
+La mutiplicacion es:
+\begin_inset Quotes erd
+\end_inset
+
+, PRODUCTO)
+\end_layout
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes erd
+\end_inset
+
+La division es:
+\begin_inset Quotes erd
+\end_inset
+
+, DIVISION)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Dado un número mostrar el producto de ese número por 6, suponiendo que se
+ cuenta solamente con el operador suma.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Imagenes/ej1-5.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Python:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+NUMERO   = int(input(
+\begin_inset Quotes eld
+\end_inset
+
+Ingrese un numero: 
+\begin_inset Quotes eld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+SEXTUPLE = NUMERO + NUMERO + NUMERO + NUMERO + NUMERO + NUMERO
+\end_layout
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes eld
+\end_inset
+
+El producto por 6 es:
+\begin_inset Quotes erd
+\end_inset
+
+, SEXTUPLE)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Dadas las medidas de dos ángulos de un triángulo, determinar la medida del
+ tercero e informar el resultado.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Imagenes/ej1-6.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Python:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+ANGULO1 = int(input(
+\begin_inset Quotes eld
+\end_inset
+
+Ingrese el primer angulo: 
+\begin_inset Quotes eld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+ANGULO2 = int(input(
+\begin_inset Quotes eld
+\end_inset
+
+Ingrese el segundo angulo: 
+\begin_inset Quotes eld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+ANGULO3 = 180 - ANGULO1 - ANGULO2
+\end_layout
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes eld
+\end_inset
+
+El ángulo restante es:
+\begin_inset Quotes erd
+\end_inset
+
+, ANGULO3)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Dado el valor del lado de un cuadrado, calcular su perímetro y su superficia,
+ e informar los mismos con carteles aclaratorios.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Imagenes/ej1-7.png
+	scale 40
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Python:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+LADO       = int(input(
+\begin_inset Quotes eld
+\end_inset
+
+Ingrese el lado: 
+\begin_inset Quotes eld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+PERIMETRO  = LADO * 4
+\end_layout
+
+\begin_layout Plain Layout
+
+SUPERFICIE = LADO * LADO
+\end_layout
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes eld
+\end_inset
+
+El perimetro es:
+\begin_inset Quotes erd
+\end_inset
+
+, PERIMETRO)
+\end_layout
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes eld
+\end_inset
+
+La superficie es:
+\begin_inset Quotes erd
+\end_inset
+
+, SUPERFICIE)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Dado un número, mostrar el resultado de dicho número elevado a la octava.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Imagenes/ej1-8.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Python:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+N         = int(input(
+\begin_inset Quotes eld
+\end_inset
+
+Ingrese el numero: 
+\begin_inset Quotes eld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+RESULTADO = N * N * N * N * N * N * N * N
+\end_layout
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes eld
+\end_inset
+
+El resultado es:
+\begin_inset Quotes erd
+\end_inset
+
+, RESULTADO)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Tener en cuenta, que solo se reconocen 4 operaciones básicas.
+ ¿Cual sería el algoritmo si la máquina cuenta además con la operación potencia?
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Imagenes/ej1-9.png
+	scale 37
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Python:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+N         = int(input(
+\begin_inset Quotes eld
+\end_inset
+
+Ingrese el numero: 
+\begin_inset Quotes eld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+RESULTADO = N ** 8
+\end_layout
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes eld
+\end_inset
+
+El resultado es:
+\begin_inset Quotes erd
+\end_inset
+
+, RESULTADO)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Dado como dato el importe neto de una factura, calcular el valor correspondiente
+ al IVA (21%).
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Imagenes/ej1-10.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Python:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+NETO  = int(input(
+\begin_inset Quotes eld
+\end_inset
+
+Ingrese el importe neto: 
+\begin_inset Quotes eld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+BRUTO = NETO / 1.21
+\end_layout
+
+\begin_layout Plain Layout
+
+IVA   = NETO - BRUTO
+\end_layout
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes eld
+\end_inset
+
+El IVA es: 
+\begin_inset Quotes erd
+\end_inset
+
+, IVA)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Calcular el sueldo de un operario conociendo la cantidad de horas que trabajó
+ en el mes y el jornal horario.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Imagenes/ej1-11.png
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Python:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+HORAS  = int(input(
+\begin_inset Quotes eld
+\end_inset
+
+Ingrese las horas: 
+\begin_inset Quotes eld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+JORNAL = int(input(
+\begin_inset Quotes eld
+\end_inset
+
+Ingrese el jornal horario: 
+\begin_inset Quotes eld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+SUELDO = HORAS * JORNAL
+\end_layout
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes eld
+\end_inset
+
+El sueldo es: 
+\begin_inset Quotes erd
+\end_inset
+
+, SUELDO)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Determinar el número de horas, minutos y segundos que hay en 6250 segundos.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Imagenes/ej1-12.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Python:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+SEGUNDOS = 6250
+\end_layout
+
+\begin_layout Plain Layout
+
+MINUTOS  = SEGUNDOS / 60
+\end_layout
+
+\begin_layout Plain Layout
+
+HORAS    = MINUTOS / 60
+\end_layout
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes eld
+\end_inset
+
+Horas: 
+\begin_inset Quotes eld
+\end_inset
+
+, HORAS)
+\end_layout
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes eld
+\end_inset
+
+Minutos: 
+\begin_inset Quotes eld
+\end_inset
+
+, MINUTOS)
+\end_layout
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes eld
+\end_inset
+
+Segundos: 
+\begin_inset Quotes eld
+\end_inset
+
+, SEGUNDOS)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Dado el importe bruto de una factura, calcular el resultado de bonificarlo
+ (descuento) con un 
+\begin_inset Formula $4\%$
+\end_inset
+
+.
+ Al monto obtenido, calcularle el IVA (
+\begin_inset Formula $21\%$
+\end_inset
+
+).
+ Finalmente informar: el importe bruto, el valor de la bonificación, el
+ importe bruto bonificado, el monto correspondiente al IVA y el importe
+ neto resultante.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Imagenes/ej1-13.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Python:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+BRUTO        = int(input("Ingrese el importe bruto: "))
+\end_layout
+
+\begin_layout Plain Layout
+
+BONIFICACION = BRUTO * 4 / 100
+\end_layout
+
+\begin_layout Plain Layout
+
+SUBTOTAL     = BRUTO - BONIFICACION
+\end_layout
+
+\begin_layout Plain Layout
+
+IVA          = SUBTOTAL * 21 / 100
+\end_layout
+
+\begin_layout Plain Layout
+
+NETO         = SUBTOTAL + IVA
+\end_layout
+
+\begin_layout Plain Layout
+
+print("Bruto:", BRUTO)
+\end_layout
+
+\begin_layout Plain Layout
+
+print("Bonificacion:", BONIFICACION)
+\end_layout
+
+\begin_layout Plain Layout
+
+print("Subtotal:", SUBTOTAL)
+\end_layout
+
+\begin_layout Plain Layout
+
+print("IVA:", IVA)
+\end_layout
+
+\begin_layout Plain Layout
+
+print("neto:", NETO)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Calcular cuántos pesos tiene un banco en monedas si dispone de 
+\begin_inset Formula $N1$
+\end_inset
+
+ monedas de 1 peso, 
+\begin_inset Formula $N2$
+\end_inset
+
+ de medio peso, 
+\begin_inset Formula $N3$
+\end_inset
+
+ de un cuarto de peso, 
+\begin_inset Formula $N4$
+\end_inset
+
+ de 10 centavos y 
+\begin_inset Formula $N5$
+\end_inset
+
+ de 5 centavos de peso.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Imagenes/ej1-14.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Python:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+N1    = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese N1: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+N2    = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese N1: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+N3    = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese N1: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+N4    = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese N1: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+PESOS = N1 + N2 * 0.5 + N3 * 0.25 + N4 * 0.1
+\end_layout
+
+\begin_layout Plain Layout
+
+print("$", PESOS)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Ingresar 3 valores en 3 variables 
+\begin_inset Formula $X$
+\end_inset
+
+, 
+\begin_inset Formula $Y$
+\end_inset
+
+ y 
+\begin_inset Formula $Z$
+\end_inset
+
+.
+ Se desea obtener una rotación de sus valores, es decir que el contenido
+ de 
+\begin_inset Formula $Z$
+\end_inset
+
+ pase a 
+\begin_inset Formula $X$
+\end_inset
+
+, el contenido de 
+\begin_inset Formula $X$
+\end_inset
+
+ pase a 
+\begin_inset Formula $Y$
+\end_inset
+
+, y el contenido de 
+\begin_inset Formula $Y$
+\end_inset
+
+ pase a 
+\begin_inset Formula $Z$
+\end_inset
+
+.
+ Se debe mostrar las variables 
+\begin_inset Formula $X,$
+\end_inset
+
+ 
+\begin_inset Formula $Y$
+\end_inset
+
+ y 
+\begin_inset Formula $Z$
+\end_inset
+
+ con sus valores originales y mostrar 
+\begin_inset Formula $X$
+\end_inset
+
+, 
+\begin_inset Formula $Y$
+\end_inset
+
+ y 
+\begin_inset Formula $Z$
+\end_inset
+
+ con los valres luego de la rotación.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Imagenes/ej1-15.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Python:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+X = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese X: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+Y = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese Y: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+Z = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese Z: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+print("X: ", X)
+\end_layout
+
+\begin_layout Plain Layout
+
+print("Y: ", Y)
+\end_layout
+
+\begin_layout Plain Layout
+
+print("Z: ", Z)
+\end_layout
+
+\begin_layout Plain Layout
+
+T1 = X
+\end_layout
+
+\begin_layout Plain Layout
+
+T2 = Y
+\end_layout
+
+\begin_layout Plain Layout
+
+X  = Z
+\end_layout
+
+\begin_layout Plain Layout
+
+Y  = T1
+\end_layout
+
+\begin_layout Plain Layout
+
+Z  = T2
+\end_layout
+
+\begin_layout Plain Layout
+
+print("X: ", X)
+\end_layout
+
+\begin_layout Plain Layout
+
+print("Y: ", Y)
+\end_layout
+
+\begin_layout Plain Layout
+
+print("Z: ", Z)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Color Box
+status open
+
+\begin_layout Plain Layout
+Python ofrece una sintaxis mas cómoda para el intercambio de variables.
+ El mismo programa puede realizarse de la siguiente manera:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=Python"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+X = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese X: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+Y = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese Y: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+Z = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese Z: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+print("X: ", X)
+\end_layout
+
+\begin_layout Plain Layout
+
+print("Y: ", Y)
+\end_layout
+
+\begin_layout Plain Layout
+
+print("Z: ", Z)
+\end_layout
+
+\begin_layout Plain Layout
+
+X, Y, Z = Z, X, Y
+\end_layout
+
+\begin_layout Plain Layout
+
+print("X: ", X)
+\end_layout
+
+\begin_layout Plain Layout
+
+print("Y: ", Y)
+\end_layout
+
+\begin_layout Plain Layout
+
+print("Z: ", Z)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Indicar cómo será la salida luego de realizar lo pedido en el ejercicio
+ anterior, si se ingresa 10 en la variable 
+\begin_inset Formula $X$
+\end_inset
+
+, 15 en la variable 
+\begin_inset Formula $Y$
+\end_inset
+
+ y 20 en la variable 
+\begin_inset Formula $Z$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+X:  10
+\end_layout
+
+\begin_layout Plain Layout
+
+Y:  15
+\end_layout
+
+\begin_layout Plain Layout
+
+Z:  20
+\end_layout
+
+\begin_layout Plain Layout
+
+X:  20
+\end_layout
+
+\begin_layout Plain Layout
+
+Y:  10
+\end_layout
+
+\begin_layout Plain Layout
+
+Z:  15
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Estructura de Desición Simple (IF)
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Estructura de Iteración o repetición con cantidad conocida de veces (FOR)
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Estructura de Iteración o repetición con cantidad desconocida de veces (WHILE)
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Estructura de Iteración o repetición con cantidad desconocida de veces (REPEAT
+ UNTIL)
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Estructura de Selección Múltiple (CASE)
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
