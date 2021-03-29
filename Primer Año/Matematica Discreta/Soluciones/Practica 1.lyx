@@ -1,0 +1,2978 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{venndiagram}
+\end_preamble
+\use_default_options true
+\begin_modules
+tcolorbox
+multicol
+customHeadersFooters
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Center Header
+
+\end_layout
+
+\begin_layout Left Header
+
+\end_layout
+
+\begin_layout Right Header
+
+\end_layout
+
+\begin_layout Center Footer
+
+\end_layout
+
+\begin_layout Left Footer
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\size scriptsize
+Soluciones de Matemática Discreta.
+ Profesora Rosa Maenza - U.T.N.
+ - FRRosario
+\end_layout
+
+\begin_layout Right Footer
+
+\size scriptsize
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Página 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thepage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+EJERCICIOS: CONJUNTOS
+\end_layout
+
+\begin_layout Paragraph
+Importante: la respuesta o resolución de cada ejercicio debe estar debidamente
+ justificada.
+\end_layout
+
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $A=\left\{ 1,2,a,b,c\right\} $
+\end_inset
+
+.
+ Identifica cada cso como verdadero o falso.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Multiple Columns
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $2\in A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $3\in A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $c\notin A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\emptyset\in A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\emptyset\notin A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A\in A$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Soluciones
+\end_layout
+
+\begin_layout Enumerate
+
+\color green
+Verdadero
+\color inherit
+, ya que 
+\begin_inset Formula $2$
+\end_inset
+
+ puede observarse como elemento de 
+\begin_inset Formula $A$
+\end_inset
+
+ en su definición.
+\end_layout
+
+\begin_layout Enumerate
+
+\color red
+Falso
+\color inherit
+, ya que 
+\begin_inset Formula $3$
+\end_inset
+
+ no puede observarse como elemento de 
+\begin_inset Formula $A$
+\end_inset
+
+ en su definición.
+\end_layout
+
+\begin_layout Enumerate
+
+\color red
+Falso
+\color inherit
+, ya que 
+\begin_inset Formula $c$
+\end_inset
+
+ puede observarse como elemento de 
+\begin_inset Formula $A$
+\end_inset
+
+ en su definición.
+\end_layout
+
+\begin_layout Enumerate
+
+\color red
+Falso
+\color inherit
+, ya que 
+\begin_inset Formula $\emptyset$
+\end_inset
+
+ puede observarse como elemento de 
+\begin_inset Formula $A$
+\end_inset
+
+ en su definición.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Color Box
+status open
+
+\begin_layout Plain Layout
+Nótese que si bien 
+\begin_inset Formula $\emptyset$
+\end_inset
+
+ no es un elemento de 
+\begin_inset Formula $A$
+\end_inset
+
+, si es un subconjunto, es decir: 
+\begin_inset Formula $\emptyset\subseteq A$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\color green
+Verdadero
+\color inherit
+, ya que 
+\begin_inset Formula $\emptyset$
+\end_inset
+
+ no puede observarse como elemento de 
+\begin_inset Formula $A$
+\end_inset
+
+ en su definición.
+\end_layout
+
+\begin_layout Enumerate
+
+\color red
+Falso
+\color inherit
+, ya que 
+\begin_inset Formula $A$
+\end_inset
+
+ no puede observarse como elemento de 
+\begin_inset Formula $A$
+\end_inset
+
+ en su definición.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+Nótese que si bien 
+\begin_inset Formula $A$
+\end_inset
+
+ no es un elemento de 
+\begin_inset Formula $A$
+\end_inset
+
+, si es un subconjunto, es decir: 
+\begin_inset Formula $A\subseteq A$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $A=\left\{ x/x\in\mathbb{R}\land x\leq5\right\} $
+\end_inset
+
+.
+ Identifica cada caso como verdadero o falso.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Multiple Columns
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $3\in A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $6\in A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $5\notin A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $8\notin A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $-8\in A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $3,4\notin A$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Soluciones
+\end_layout
+
+\begin_layout Enumerate
+
+\color green
+Verdadero
+\color inherit
+ pues 
+\begin_inset Formula $3\in\mathbb{R}$
+\end_inset
+
+ y 
+\begin_inset Formula $3\leq5$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\color red
+Falso
+\color inherit
+ pues 
+\begin_inset Formula $6>5$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\color red
+Falso
+\color inherit
+ pues 
+\begin_inset Formula $5\in A$
+\end_inset
+
+, ya que 
+\begin_inset Formula $5\in\mathbb{R}$
+\end_inset
+
+ y 
+\begin_inset Formula $5\leq5$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\color green
+Verdadero
+\color inherit
+ pues 
+\begin_inset Formula $8>5$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\color green
+Verdadero
+\color inherit
+ pues 
+\begin_inset Formula $-8\in\mathbb{R}$
+\end_inset
+
+ y 
+\begin_inset Formula $-8\leq5$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\color red
+Falso
+\color inherit
+ pues 
+\begin_inset Formula $3,4\in A$
+\end_inset
+
+, ya que 
+\begin_inset Formula $3,4\in\mathbb{R}$
+\end_inset
+
+ y 
+\begin_inset Formula $3,4\leq5$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Identifica cada caso como verdadero o falso.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Multiple Columns
+status collapsed
+
+\begin_layout Enumerate
+\begin_inset Formula $2\in\left\{ 2\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ 0\right\} \in\left\{ \left\{ 0\right\} ,\left\{ 1\right\} \right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $0\in\left\{ \left\{ 0\right\} ,\left\{ 1\right\} \right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ 3\right\} \in\left\{ 1,2,3\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $0\in\left\{ 0,\left\{ 1\right\} \right\} $
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Soluciones
+\end_layout
+
+\begin_layout Enumerate
+
+\color green
+Verdadero
+\color inherit
+, ya que 
+\begin_inset Formula $2$
+\end_inset
+
+ puede observarse como elemento de 
+\begin_inset Formula $\left\{ 2\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\color green
+Verdadero
+\color inherit
+, ya que 
+\begin_inset Formula $\left\{ 0\right\} $
+\end_inset
+
+ puede observarse como elemento de 
+\begin_inset Formula $\left\{ \left\{ 0\right\} ,\left\{ 1\right\} \right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\color red
+Falso
+\color inherit
+, ya que 
+\begin_inset Formula $0$
+\end_inset
+
+ no puede observarse como elemento de 
+\begin_inset Formula $\left\{ \left\{ 0\right\} ,\left\{ 1\right\} \right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+Nótese que 
+\begin_inset Formula $0\neq\left\{ 0\right\} $
+\end_inset
+
+, pues el primero es un número y el segundo un conjunto.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\color red
+Falso
+\color inherit
+, ya que 
+\begin_inset Formula $\left\{ 3\right\} $
+\end_inset
+
+ no puede observarse como elemento de 
+\begin_inset Formula $\left\{ 1,2,3\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+Nótese que 
+\begin_inset Formula $\left\{ 3\right\} \neq3$
+\end_inset
+
+, pues el primero es un conjunto y el segundo un número.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\color green
+Verdadero
+\color inherit
+, ya que 
+\begin_inset Formula $0$
+\end_inset
+
+ puede observarse como elemento de 
+\begin_inset Formula $\left\{ 0,\left\{ 1\right\} \right\} $
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Escribe por extensión los elementos de cada conjunto:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $A=\left\{ x/x\in\mathbb{Z};x^{2}\leq14\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $B=\left\{ x/x\in\mathbb{Z}^{+}\land x=4\cdot n\land n<3\land n\in\mathbb{Z}^{+}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $C=\left\{ x/x\in\mathbb{Z};x^{2}+1=0\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Soluciones
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A=\left\{ -3,-2,-1,0,1,2,3\right\} $
+\end_inset
+
+, pues para cada uno de estos elementos se verifica que son enteros y además
+ su cuadrado es menor o igual a 14.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $B=\left\{ 4,8\right\} $
+\end_inset
+
+, pues 
+\begin_inset Formula $4=4\cdot1$
+\end_inset
+
+ y 
+\begin_inset Formula $8=4\cdot2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $C=\emptyset=\left\{ \right\} $
+\end_inset
+
+, pues no existen soluciónes enteras a la ecuación 
+\begin_inset Formula $x^{2}+1=0$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Escribe por comprensión cada uno de los siguientes conjuntos:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $A=\left\{ 2,4,6,8,10\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $B=\left\{ 1,8,27,64,125\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $C=\left\{ -2,-1,0,1,2\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $D=\left\{ \text{Brasil},\text{Uruguay},\text{Chile},\text{Bolivia},\text{Paraguay}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $E=\left\{ a,e,i,o,u\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Soluciones
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A=\left\{ x/x\in\mathbb{Z}\land2\leq x\leq10\land x\text{ es par}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+También podría escrbirse 
+\begin_inset Formula $A=\left\{ 2\cdot x/x\in\mathbb{N}\land x\leq5\right\} $
+\end_inset
+
+.
+ Aunque en el lenguaje matemático esto no solo es correcto sino que también
+ usual, la cátedra no lo admite.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $B=\left\{ x/x=k^{3}\land k\in\mathbb{N}\land k\leq5\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+Vale en este caso una nota similar a la anterior.
+ El mismo conjunto puede escribirse como 
+\begin_inset Formula $B=\left\{ x^{3}/x\in\mathbb{N}\land x\leq5\right\} $
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $C=\left\{ x/x\in\mathbb{Z}\land-2\leq x\leq2\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $D=\left\{ x/x\text{ es un país limitrofe de Argentina}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $E=\left\{ x/x\text{ es una vocal}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $A=\left\{ 1,2,3\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $B=\left\{ 3,1,2\right\} $
+\end_inset
+
+ y 
+\begin_inset Formula $C=\left\{ x/x\in\mathbb{Z}^{+}\land3\leq x+2\leq5\right\} $
+\end_inset
+
+.
+ ¿Cómo están relacionados 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $B$
+\end_inset
+
+ y 
+\begin_inset Formula $C$
+\end_inset
+
+?
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Standard
+Observemos que 
+\begin_inset Formula $C=\left\{ x/x\in\mathbb{Z}^{+}\land1\leq x\leq3\right\} =\left\{ 1,2,3\right\} $
+\end_inset
+
+; luego son todos los conjuntos iguales.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Para cada entero no negativo 
+\begin_inset Formula $n$
+\end_inset
+
+, sea 
+\begin_inset Formula $U_{n}=\left\{ n,-n\right\} $
+\end_inset
+
+.
+ Encuentra 
+\begin_inset Formula $U_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $U_{2}$
+\end_inset
+
+, y 
+\begin_inset Formula $U_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $U_{1}=\left\{ 1,-1\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $U_{2}=\left\{ 2,-2\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $U_{0}=\left\{ 0\right\} $
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Encuentra la cardinalidad de cada uno de los siguientes conjuntos:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $X=\left\{ 2,3,4,5\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $Y=\left\{ 1,\left\{ 1\right\} ,\left\{ 1,\left\{ 1\right\} \right\} \right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $Z=\left\{ x/x\in\mathbb{Z}^{+};x=3\cdot n;n\in\mathbb{Z}^{+};n\leq5\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Soluciones
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|X\right|=4$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|Y\right|=3$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Observemos que 
+\begin_inset Formula $Z=\left\{ 3,6,9,12,15\right\} $
+\end_inset
+
+, luego 
+\begin_inset Formula $\left|Z\right|=5$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Analiza y justifica si es verdadero o falso cada caso:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ 0\right\} =\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ 2\right\} \subseteq\left\{ 1,\left\{ 2\right\} ,\left\{ 3\right\} \right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ 1\right\} \subseteq\left\{ 1,2\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ 1\right\} \subseteq\left\{ 1,\left\{ 2\right\} \right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ \left\{ 2\right\} \right\} \subseteq\left\{ 1,\left\{ 2\right\} ,\left\{ 3\right\} \right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Soluciones
+\end_layout
+
+\begin_layout Enumerate
+
+\color red
+Falso
+\color inherit
+, pues 
+\begin_inset Formula $0\in\left\{ 0\right\} $
+\end_inset
+
+ pero 
+\begin_inset Formula $0\notin\emptyset$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\color red
+Falso
+\color inherit
+, pues 
+\begin_inset Formula $2\in\left\{ 2\right\} $
+\end_inset
+
+ pero 
+\begin_inset Formula $2\notin\left\{ 1,\left\{ 2\right\} ,\left\{ 3\right\} \right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\color green
+Verdadero
+\color inherit
+ pues 
+\begin_inset Formula $1\in\left\{ 1\right\} $
+\end_inset
+
+ y 
+\begin_inset Formula $1\in\left\{ 1,2\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\color green
+Verdadero
+\color inherit
+ pues 
+\begin_inset Formula $1\in\left\{ 1\right\} $
+\end_inset
+
+ y 
+\begin_inset Formula $1\in\left\{ 1,\left\{ 2\right\} \right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\color green
+Verdadero
+\color inherit
+ pues 
+\begin_inset Formula $\left\{ 2\right\} \in\left\{ \left\{ 2\right\} \right\} $
+\end_inset
+
+ y 
+\begin_inset Formula $\left\{ 2\right\} \in\left\{ 1,\left\{ 2\right\} ,\left\{ 3\right\} \right\} $
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Dados los siguientes conjuntos, expresa mediante símbolos todas las inclusiones
+ posibles:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $S=\left\{ 1,2,3,4,5,6\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $T=\left\{ x/x\in\mathbb{Z}^{+},x=3\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $P=\left\{ 2,4,5\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $G=\left\{ 1,2,3,4,5\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Standard
+Observemos que 
+\begin_inset Formula $T=\left\{ 3\right\} $
+\end_inset
+
+, luego:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $S\nsubseteq T$
+\end_inset
+
+, pues 
+\begin_inset Formula $6\in S$
+\end_inset
+
+ pero 
+\begin_inset Formula $6\notin T$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $S\nsubseteq P$
+\end_inset
+
+, pues 
+\begin_inset Formula $1\in S$
+\end_inset
+
+ pero 
+\begin_inset Formula $1\notin P$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $S\nsubseteq G$
+\end_inset
+
+, pues 
+\begin_inset Formula $6\in S$
+\end_inset
+
+ pero 
+\begin_inset Formula $6\notin G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $T\nsubseteq P$
+\end_inset
+
+, pues 
+\begin_inset Formula $3\in T$
+\end_inset
+
+ pero 
+\begin_inset Formula $3\notin P$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $T\subseteq G$
+\end_inset
+
+, pues 
+\begin_inset Formula $3\in T$
+\end_inset
+
+ y 
+\begin_inset Formula $3\in G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $T\subseteq S$
+\end_inset
+
+, pues 
+\begin_inset Formula $3\in T$
+\end_inset
+
+ y 
+\begin_inset Formula $3\in S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $P\subseteq G$
+\end_inset
+
+, pues para 
+\begin_inset Formula $x=2,4,5$
+\end_inset
+
+ resulta 
+\begin_inset Formula $x\in P$
+\end_inset
+
+ y 
+\begin_inset Formula $x\in G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $P\subseteq S$
+\end_inset
+
+, pues para 
+\begin_inset Formula $x=2,4,5$
+\end_inset
+
+ resulta 
+\begin_inset Formula $x\in P$
+\end_inset
+
+ y 
+\begin_inset Formula $x\in S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $P\nsubseteq T$
+\end_inset
+
+, pues 
+\begin_inset Formula $5\in P$
+\end_inset
+
+ y 
+\begin_inset Formula $5\notin T$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Dibuja un diagrama de Venn que represente por separado cada una de estas
+ relaciones:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $A\subseteq B$
+\end_inset
+
+, 
+\begin_inset Formula $A\subseteq C$
+\end_inset
+
+, 
+\begin_inset Formula $B\nsubseteq C$
+\end_inset
+
+ y 
+\begin_inset Formula $C\nsubseteq B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\in A$
+\end_inset
+
+, 
+\begin_inset Formula $x\in B$
+\end_inset
+
+, 
+\begin_inset Formula $x\notin C$
+\end_inset
+
+, 
+\begin_inset Formula $y\in B$
+\end_inset
+
+, 
+\begin_inset Formula $y\in C$
+\end_inset
+
+, 
+\begin_inset Formula $y\notin A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Soluciones
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Multiple Columns
+status collapsed
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{venndiagram2sets}[tikzoptions={scale=0.8}, labelA=B, labelB=C, labelAB=A]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{venndiagram2sets}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{venndiagram3sets}[tikzoptions={scale=0.8}, overlap=1cm, labelOnlyAB=x,
+ labelOnlyBC=y]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{venndiagram3sets}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $A=\left\{ c,d,f,g\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $B=\left\{ f,j\right\} $
+\end_inset
+
+ y 
+\begin_inset Formula $C=\left\{ d,g\right\} $
+\end_inset
+
+.
+ Analiza la veracidad y falsedad de cada una d elas siguientes inclusiones,
+ justifica tu respuesta:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Multiple Columns
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $B\subseteq A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $C\subseteq A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $C\subseteq C$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Soluciones
+\end_layout
+
+\begin_layout Enumerate
+
+\color red
+Falso
+\color inherit
+, pues 
+\begin_inset Formula $j\in B$
+\end_inset
+
+ pero 
+\begin_inset Formula $j\notin A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\color green
+Verdadero
+\color inherit
+, pues para 
+\begin_inset Formula $x=d,g$
+\end_inset
+
+ resulta: 
+\begin_inset Formula $x\in C$
+\end_inset
+
+ y 
+\begin_inset Formula $x\in A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\color green
+Verdadero
+\color inherit
+, pues para 
+\begin_inset Formula $x=d,g$
+\end_inset
+
+ resulta: 
+\begin_inset Formula $x\in C$
+\end_inset
+
+ y 
+\begin_inset Formula $x\in C$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+Vale la pena notar que para cualquier conjunto 
+\begin_inset Formula $X$
+\end_inset
+
+ resulta 
+\begin_inset Formula $X\subseteq X$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Sean los conjuntos:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $R=\left\{ x/x\in\mathbb{Z},x\text{ es divisible por }2\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $S=\left\{ y/y\in\mathbb{Z},y\text{ es divisible por }3\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $T=\left\{ z/z\in\mathbb{Z},z\text{ es divisible por }6\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Analiza la veracidad y falsedad de cada una de las siguientes inclusiones,
+ justifica tu respuesta:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Multiple Columns
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $R\subseteq T$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $T\subseteq R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $T\subseteq S$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Soluciones
+\end_layout
+
+\begin_layout Enumerate
+
+\color red
+Falso
+\color inherit
+, pues 
+\begin_inset Formula $2\in R$
+\end_inset
+
+ pero 
+\begin_inset Formula $2\notin T$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\color green
+Verdadero
+\color inherit
+.
+ Sea 
+\begin_inset Formula $x\in T$
+\end_inset
+
+, luego por definición de 
+\begin_inset Formula $T$
+\end_inset
+
+ resulta 
+\begin_inset Formula $x=6\cdot n=2\cdot3\cdot n$
+\end_inset
+
+ para algún 
+\begin_inset Formula $n\in\mathbb{Z}$
+\end_inset
+
+.
+ Tomando 
+\begin_inset Formula $k=3\cdot n$
+\end_inset
+
+ vemos que 
+\begin_inset Formula $x=2\cdot k$
+\end_inset
+
+ por lo que 
+\begin_inset Formula $x\in R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\color green
+Verdadero
+\color inherit
+.
+ Análogamente al caso anterior, pero tomando 
+\begin_inset Formula $k=2\cdot n$
+\end_inset
+
+ podemos observar que 
+\begin_inset Formula $x\in T\Rightarrow x\in S$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $A=\left\{ 1,2,5,8,11\right\} $
+\end_inset
+
+.
+ Identifica cada uno de los siguientes casos verdadero o falso:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ 5,1\right\} \subseteq A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ 8,1\right\} \subseteq A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ 1,8,2,5,11\right\} \nsubseteq A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Soluciones
+\end_layout
+
+\begin_layout Enumerate
+
+\color green
+Verdadero
+\color inherit
+, pues para 
+\begin_inset Formula $x=5,1$
+\end_inset
+
+ resulta 
+\begin_inset Formula $x\in\left\{ 5,1\right\} $
+\end_inset
+
+ y 
+\begin_inset Formula $x\in A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\color green
+Verdadero
+\color inherit
+, pues para 
+\begin_inset Formula $x=8,1$
+\end_inset
+
+ resulta 
+\begin_inset Formula $x\in\left\{ 8,1\right\} $
+\end_inset
+
+ y 
+\begin_inset Formula $x\in A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\color red
+Falso
+\color inherit
+, pues 
+\begin_inset Formula $\left\{ 1,8,2,5,11\right\} =A$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $U=\mathbb{Z}^{+}$
+\end_inset
+
+ y sean los conjuntos 
+\begin_inset Formula $A$
+\end_inset
+
+ y 
+\begin_inset Formula $B$
+\end_inset
+
+ que se dan en cada apartado, analiza si son pares de conjuntos disjuntos.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $A=\left\{ x/x\in\mathbb{Z}^{+}\land x\text{ es par}\right\} $
+\end_inset
+
+ y 
+\begin_inset Formula $B=\left\{ x/x\in\mathbb{Z}^{+}\land x\text{ es impar}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A=\left\{ x/x\in\mathbb{Z}^{+}\land2x\text{ es par}\right\} $
+\end_inset
+
+ y 
+\begin_inset Formula $B=\left\{ x/x\in\mathbb{Z}^{+}\land x\text{ es par}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A=\left\{ x/x\in\mathbb{Z}^{+}\land x^{2}-4=0\right\} $
+\end_inset
+
+ y 
+\begin_inset Formula $B=\left\{ x/x\in\mathbb{Z}^{+}\land x-4=0\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Soluciones
+\end_layout
+
+\begin_layout Enumerate
+
+\color green
+Verdadero
+\color inherit
+.
+ Supongamos lo contrario, es decir que existe 
+\begin_inset Formula $x/x\in A\land x\in B$
+\end_inset
+
+, luego por definición de 
+\begin_inset Formula $A$
+\end_inset
+
+ y 
+\begin_inset Formula $B$
+\end_inset
+
+ 
+\begin_inset Formula $x$
+\end_inset
+
+ es par e impar.
+ Absurdo.
+\end_layout
+
+\begin_layout Enumerate
+
+\color red
+Falso
+\color inherit
+, pues 
+\begin_inset Formula $2\in A$
+\end_inset
+
+ y 
+\begin_inset Formula $2\in B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\color green
+Verdadero
+\color inherit
+, pues 
+\begin_inset Formula $A=\left\{ 2,-2\right\} $
+\end_inset
+
+ y 
+\begin_inset Formula $B=\left\{ 4\right\} $
+\end_inset
+
+.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $A=\left\{ a,b,c\right\} $
+\end_inset
+
+ verifica si se cumplen los siguientes enunciados:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Multiple Columns
+status collapsed
+
+\begin_layout Enumerate
+\begin_inset Formula $A\in\mathcal{P}\left(A\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\emptyset\in\mathcal{P}\left(A\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ a,b\right\} \in\mathcal{P}\left(A\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ a,b\right\} \subseteq A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ \left\{ a,b\right\} ,\left\{ a,c\right\} \right\} \subseteq A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ A,\left\{ a\right\} ,\left\{ a,c\right\} \right\} \subseteq\mathcal{P}\left(A\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ \left\{ a,b\right\} ,\left\{ a,c\right\} \right\} \in A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ \left\{ a,b\right\} \right\} \subseteq\mathcal{P}\left(A\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ \left\{ a,b\right\} \right\} \in\mathcal{P}\left(A\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ \mathcal{P}\left(A\right)\right\} \subseteq\mathcal{P}\left(A\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ \emptyset\right\} \in\mathcal{P}\left(A\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathcal{P}\left(A\right)\subseteq\mathcal{P}\left(A\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A\subseteq\mathcal{P}\left(A\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\emptyset\subseteq\mathcal{P}\left(A\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate-Resume
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(o)
+\end_layout
+
+\end_inset
+
+La unión de todos los elementos de 
+\begin_inset Formula $\mathcal{P}\left(A\right)$
+\end_inset
+
+ es 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate-Resume
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(p)
+\end_layout
+
+\end_inset
+
+Dos subconjuntos cualesquiera de 
+\begin_inset Formula $A$
+\end_inset
+
+ son disjuntos.
+\end_layout
+
+\begin_layout Enumerate-Resume
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(q)
+\end_layout
+
+\end_inset
+
+Los elementos de 
+\begin_inset Formula $\mathcal{P}\left(A\right)$
+\end_inset
+
+ son elementos de 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Soluciones
+\end_layout
+
+\begin_layout Standard
+Observemos primero que 
+\begin_inset Formula $\mathcal{P}\left(A\right)=\left\{ \emptyset,\left\{ a\right\} ,\left\{ b\right\} ,\left\{ c\right\} ,\left\{ a,b\right\} ,\left\{ b,c\right\} ,A\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\color green
+Verdadero
+\color inherit
+, pues 
+\begin_inset Formula $A$
+\end_inset
+
+ forma parte de la definición de 
+\begin_inset Formula $\mathcal{P}\left(A\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\color green
+Verdadero
+\color inherit
+, pues 
+\begin_inset Formula $\emptyset$
+\end_inset
+
+ forma parte de la definición de 
+\begin_inset Formula $\mathcal{P}\left(A\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\color green
+Verdadero
+\color inherit
+, pues 
+\begin_inset Formula $\left\{ a,b\right\} $
+\end_inset
+
+ forma parte de la definición de 
+\begin_inset Formula $\mathcal{P}\left(A\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\color green
+Verdadero
+\color inherit
+, pues para 
+\begin_inset Formula $x=a,b$
+\end_inset
+
+ resulta 
+\begin_inset Formula $x\in\left\{ a,b\right\} $
+\end_inset
+
+ y 
+\begin_inset Formula $x\in A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\color red
+Falso
+\color inherit
+ pues para 
+\begin_inset Formula $\left\{ a,b\right\} \in\left\{ \left\{ a,b\right\} ,\left\{ a,c\right\} \right\} $
+\end_inset
+
+ pero 
+\begin_inset Formula $\left\{ a,b\right\} \notin A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\color green
+Verdadero
+\color inherit
+ pues para 
+\begin_inset Formula $x=A,\left\{ a\right\} ,\left\{ b,c\right\} $
+\end_inset
+
+ resultan 
+\begin_inset Formula $x\in\left\{ A,\left\{ a\right\} ,\left\{ a,c\right\} \right\} $
+\end_inset
+
+ y 
+\begin_inset Formula $x\in\mathcal{P}\left(A\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\color red
+Falso
+\color inherit
+ pues 
+\begin_inset Formula $\left\{ \left\{ a,b\right\} ,\left\{ a,c\right\} \right\} $
+\end_inset
+
+ no puede observarse en la definición de 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\color green
+Verdadero
+\color inherit
+, pues 
+\begin_inset Formula $\left\{ a,b\right\} \in\left\{ \left\{ a,b\right\} \right\} $
+\end_inset
+
+ y 
+\begin_inset Formula $\left\{ a,b\right\} \in\mathcal{P}\left(A\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\color red
+Falso
+\color inherit
+ pues 
+\begin_inset Formula $\left\{ \left\{ a,b\right\} \right\} $
+\end_inset
+
+ no puede observarse en la definición de 
+\begin_inset Formula $\mathcal{P}\left(A\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\color red
+Falso
+\color inherit
+ pues 
+\begin_inset Formula $\mathcal{P}\left(A\right)\in\left\{ \mathcal{P}\left(A\right)\right\} $
+\end_inset
+
+ pero 
+\begin_inset Formula $\mathcal{P}\left(A\right)\notin\mathcal{P}\left(A\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\color red
+Falso
+\color inherit
+ pues 
+\begin_inset Formula $\left\{ \emptyset\right\} $
+\end_inset
+
+ no puede observarse en la definición de 
+\begin_inset Formula $\mathcal{P}\left(A\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\color green
+Verdadero
+\color inherit
+, pues para cualquier conjunto 
+\begin_inset Formula $X$
+\end_inset
+
+, si 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ entonces trivialmente 
+\begin_inset Formula $x\in X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\color red
+Falso
+\color inherit
+ pues 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ pero 
+\begin_inset Formula $a\notin\mathcal{P}\left(A\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\color green
+Verdadero
+\color inherit
+.
+ Supongamos lo contrario, luego existe 
+\begin_inset Formula $x\in\emptyset/x\notin\mathcal{P}\left(A\right)$
+\end_inset
+
+.
+ Absurdo.
+\end_layout
+
+\begin_layout Enumerate
+
+\color green
+Verdadero
+\color inherit
+ pues 
+\begin_inset Formula $\emptyset\cup\left\{ a\right\} \cup\left\{ b\right\} \cup\left\{ c\right\} \cup\left\{ a,b\right\} \cup\left\{ b,c\right\} \cup A=A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\color red
+Falso
+\color inherit
+ pues 
+\begin_inset Formula $A\cap\left\{ a\right\} \neq\emptyset$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\color red
+Falso
+\color inherit
+ pues 
+\begin_inset Formula $\left\{ a\right\} \in\mathcal{P}\left(A\right)$
+\end_inset
+
+ pero 
+\begin_inset Formula $\left\{ a\right\} \notin A$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Analiza los siguientes casos y justifica tu respuesta.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $A\cup B=A\cup C$
+\end_inset
+
+, ¿Es 
+\begin_inset Formula $B=C$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $A\cap B=A\cap C$
+\end_inset
+
+, ¿Es 
+\begin_inset Formula $B=C$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Paragraph
+Soluciones
+\end_layout
+
+\begin_layout Enumerate
+
+\color red
+Falso
+\color inherit
+.
+ Basta notar que para 
+\begin_inset Formula $A=\left\{ 1,2\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $B=\left\{ 1\right\} $
+\end_inset
+
+ y 
+\begin_inset Formula $C=\left\{ 2\right\} $
+\end_inset
+
+ se cumple 
+\begin_inset Formula $A\cup B=A\cup C$
+\end_inset
+
+ pero 
+\begin_inset Formula $B\neq C$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\color red
+Falso
+\color inherit
+.
+ Basta notar que para 
+\begin_inset Formula $A=\left\{ 1\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $B=\left\{ 2\right\} $
+\end_inset
+
+ y 
+\begin_inset Formula $C=\left\{ 3\right\} $
+\end_inset
+
+ se cumple 
+\begin_inset Formula $A\cap B=A\cap C$
+\end_inset
+
+ pero 
+\begin_inset Formula $B\neq C$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Sean 
+\begin_inset Formula $U=\left\{ 1,2,3,4,5,6,7,8,9\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $A=\left\{ 1,2,4,6,8\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $B=\left\{ 2,4,5,9\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $C=\left\{ x/x\in\mathbb{Z}^{+}\land x^{2}\leq16\right\} $
+\end_inset
+
+ y 
+\begin_inset Formula $D=\left\{ 7,8\right\} $
+\end_inset
+
+.
+ Calcula:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Multiple Columns
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A\cup B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A\cup C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A\cup D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $C\cup B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A\cap C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A\cap D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $C\cap B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $C\cap D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A-B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $B-A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $C-D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\overline{C}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\overline{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A\oplus B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $C\oplus D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $C\oplus B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(A\cup B\right)\cup C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(A\cap B\right)\cap C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(B\cup C\right)\cap A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(B\cup A\right)\cap D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\overline{A\cup B}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\overline{A\cap B}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(B\cup C\right)\cup D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(B\cap C\right)\cap D$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Soluciones
+\end_layout
+
+\begin_layout Standard
+Observemos que 
+\begin_inset Formula $C=\left\{ 1,2,3,4\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A\cup B=\left\{ 1,2,4,6,8,5,9\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A\cup C=\left\{ 1,2,4,6,8,3\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A\cup D=\left\{ 1,2,4,6,8,7\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $C\cup B=\left\{ 1,2,3,4,5,9\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A\cap C=\left\{ 1,2,4\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A\cap D=\left\{ 8\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $C\cap B=\left\{ 2,4\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $C\cap D=\emptyset$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A-B=\left\{ 1,6,8\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $B-A=\left\{ 5,9\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $C-D=\left\{ 1,2,3,4\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\overline{C}=\left\{ 5,6,7,8,9\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\overline{A}=\left\{ 3,5,7,9\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A\oplus B=\left\{ 1,6,8,5,9\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $C\oplus D=\left\{ 1,2,3,4,7,8\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $C\oplus B=\left\{ 1,3,5,9\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(A\cup B\right)\cup C=$
+\end_inset
+
+ COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(A\cap B\right)\cap C=$
+\end_inset
+
+ COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(B\cup C\right)\cap A=$
+\end_inset
+
+ COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(B\cup A\right)\cap D=$
+\end_inset
+
+ COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\overline{A\cup B}=$
+\end_inset
+
+ COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\overline{A\cap B}=$
+\end_inset
+
+ COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(B\cup C\right)\cup D=$
+\end_inset
+
+ COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(B\cap C\right)\cap D=$
+\end_inset
+
+ COMPLETAR.
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
