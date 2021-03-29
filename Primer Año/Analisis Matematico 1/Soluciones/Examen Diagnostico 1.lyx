@@ -1,0 +1,573 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{venndiagram}
+\usepackage{pgfplots}
+\end_preamble
+\use_default_options true
+\begin_modules
+multicol
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+Actividad 1
+\end_layout
+
+\begin_layout Itemize
+Formalice el siguiente enunciado y resuelva: ¿Cuál es el número cuyo quíntuplo
+ dividido por la suma de dicho número más tres lleva al resultado dos?
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned} & \cfrac{5x}{x+3} & = & 2\\
+\iff & 5x & = & 2\left(x+3\right)\\
+\iff & 5x & = & 2x+6\\
+\iff & 5x-2x & = & 6\\
+\iff & 3x & = & 6\\
+\iff & x & = & \cfrac{6}{3}=2
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Enuncie coloquialmente y resuelva, indicando en cada paso del proceso de
+ resolución qué propiedades/leyes del álgebra utilizó:
+\begin_inset Formula 
+\[
+\left(x+3\right)\left(x-1\right)=4x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Standard
+¿Cuales son los números que sumados a tres y multiplicados por su predecesor,
+ son iguales a su cuadruple?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{cc}
+ & \left(x+3\right)\left(x-1\right)=4x\\
+\iff & \left\langle \text{Propiedad distributiva}\right\rangle \\
+ & x^{2}-x+3x-3=4x\\
+\iff & \left\langle \text{Restamos }4x\text{ a ambos lados}\right\rangle \\
+ & x^{2}-x+3x-3-4x=0\\
+\iff & \left\langle \text{Factor común }x\right\rangle \\
+ & x^{2}+x\left(-1+3-4\right)-3=0\\
+\iff & \left\langle \text{Aritmética}\right\rangle \\
+ & x^{2}-2x-3=0\\
+\iff & \left\langle \text{Resolvente}\right\rangle \\
+ & x=\cfrac{-\left(-2\right)+\sqrt{\left(-2\right)^{2}-4\cdot1\cdot\left(-3\right)}}{2\cdot1}\lor x=\cfrac{-\left(-2\right)-\sqrt{\left(-2\right)^{2}-4\cdot1\cdot\left(-3\right)}}{2\cdot1}\\
+\iff & \left\langle \text{Aritmética}\right\rangle \\
+ & x=\cfrac{2+\sqrt{4+12}}{2}\lor x=\cfrac{2-\sqrt{4+12}}{2}\\
+\iff & \left\langle \text{Aritmética}\right\rangle \\
+ & x=\cfrac{2+4}{2}=3\lor x=\cfrac{2-4}{2}=-1
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Si a un número real le restamos ocho y a dicho resultado le aplicamos valor
+ absoluto, obtenemos por resultado siete.
+ ¿De qué números se trata? ¿Cómo representaría el conjunto solución?
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{cc}
+ & \left|x-8\right|=7\\
+\iff & x-8=7\lor-\left(x-8\right)=7\\
+\iff & x=7+8\lor-x+8=7\\
+\iff & x=15\lor-x=7-8\\
+\iff & x=15\lor-x=-1\\
+\iff & x=15\lor x=1
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S=\left\{ 15,1\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Indique con qué dificultades se encontró al realizar la actividad propuesta.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Standard
+Ninguna.
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+Actividad 2
+\end_layout
+
+\begin_layout Itemize
+Representar en un diagrama los conjuntos 
+\begin_inset Formula $A=\left\{ 2,3,4\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $B=\left\{ 4,5,6\right\} $
+\end_inset
+
+ y 
+\begin_inset Formula $C=\left\{ 6,7,8\right\} $
+\end_inset
+
+ contenidos en el universal 
+\begin_inset Formula $U=\left\{ x/x\in\mathbb{N}\land2\leq x\leq10\right\} $
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{venndiagram3sets}[labelOnlyA=2  3, labelOnlyB=5, labelOnlyAB=4, labelOnlyB
+C=6, labelOnlyC=7 8, labelNotABC=9 10]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{venndiagram3sets}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Determinar los siguientes conjuntos por extensión:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $A\cap B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left(A-B\right)\cap C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\complement_{A\cup B}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\complement_{A}\cap\complement_{B}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Soluciones
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $A\cap B=\left\{ 4\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $A-B=\left\{ 2,3\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left(A-B\right)\cap C=\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $A\cup B=\left\{ 2,3,4,5,6\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\complement_{A\cup B}=\left\{ 7,8,9,10\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\complement_{A}=\left\{ 5,6,7,8,9,10\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\complement_{B}=\left\{ 2,3,7,8,9,10\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\complement_{A}\cap\complement_{B}=\left\{ 7,8,9,10\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+En base a lo trabajado en esta actividad plantee/modelice una situación
+ de la vida cotidiana sustituyendo los objetos numéricos por otros de diferente
+ naturaleza que a Ud.
+ le interese intentando conferir sentido a los resultados de las operaciones
+ propuestas o proponiendo otras que si lo tengan a su entender.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $A=SEVEN=\left\{ \text{Brad Pitt},\text{Morgan Freeman},\text{Kevin Spacey}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $B=SLEEPERS=\left\{ \text{Brad Pitt},\text{Dustin Hoffman},\text{Robert De Niro}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $C=UNTOUCHABLES=\left\{ \text{Robert De Niro},\text{Kevin Costner},\text{Sean Connery}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $U=A\cup B\cup C\cup\left\{ \text{Al Pacino},\text{Meryl Streep}\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+Actividad 3
+\end_layout
+
+\begin_layout Itemize
+Representar en un diagrama 
+\begin_inset Formula $y=f\left(x\right)=x+1$
+\end_inset
+
+.
+ A continuación pedimos señalar en dicho diagrama el conjunto de puntos
+ 
+\begin_inset Formula $R=\left\{ \left(x,y\right)/0\leq x\leq5\land0\leq y\leq x+1\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+begin{axis}[axis lines=middle, thick, domain=-2:6, legend pos=north east,
+ axis on top, ymin=-1, xmin=-1, legend style={at={(0.55,1)}}, ytick={0,1,2,3,4,5,
+6}, xmax=6, xtick={-2,-1,0,1,2,3,4,5,6}, axis equal]
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+addplot [forget plot, fill=blue!20, draw=none, domain=0:5] {x+1} 
+\backslash
+closedcycle;
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+addplot+[no marks] {x+1};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+addlegendentry{$f(x)$}
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+end{axis}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Interpretar que representaría la región plana 
+\begin_inset Formula $R$
+\end_inset
+
+ diagramada, si en la ley consideramos a la variable 
+\begin_inset Formula $y$
+\end_inset
+
+ como el caudal 
+\begin_inset Formula $Q$
+\end_inset
+
+ en metros cúbicos por hora de un cierto líquido, es decir 
+\begin_inset Formula $Q\left(t\right)=t+1$
+\end_inset
+
+ donde 
+\begin_inset Formula $t$
+\end_inset
+
+ es el tiempo en horas.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Standard
+COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+¿Cómo interpreta los valores 
+\begin_inset Formula $Q\left(0\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $Q\left(5\right)$
+\end_inset
+
+?
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Standard
+En el instante de tiempo inicial el caudal del liquido es de 
+\begin_inset Formula $1m^{3}/h$
+\end_inset
+
+ y luego de transcurrir 5 horas se incremento hasta 
+\begin_inset Formula $6m^{3}/h$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
