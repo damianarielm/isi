@@ -145,6 +145,21 @@ NSD:
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Flex Color Box
+status open
+
+\begin_layout Plain Layout
+La declarativa de variables como se ve en los diagramas aquí presentes es
+ tanto correcta como frecuente.
+ Desafortunadamente la cátedra lo considera incorrecto.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_deeper
 \begin_layout Itemize
 Python:
@@ -255,10 +270,6 @@ NSD:
 	filename Imagenes/ej1-3.png
 	scale 40
 
-\end_inset
-
-
-\begin_inset Newpage pagebreak
 \end_inset
 
 
