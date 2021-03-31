@@ -1636,7 +1636,7 @@ NSD:
 \align center
 \begin_inset Graphics
 	filename Imagenes/ej1-15.png
-	scale 40
+	scale 38
 
 \end_inset
 
@@ -1696,63 +1696,34 @@ Ingrese Z:
 
 \begin_layout Plain Layout
 
-print("X: ", X)
+print("X, Y, Z:", X, Y, Z)
 \end_layout
 
 \begin_layout Plain Layout
 
-print("Y: ", Y)
+T = X
 \end_layout
 
 \begin_layout Plain Layout
 
-print("Z: ", Z)
+X = Z
 \end_layout
 
 \begin_layout Plain Layout
 
-T1 = X
+Z = Y
 \end_layout
 
 \begin_layout Plain Layout
 
-T2 = Y
+Y = T
 \end_layout
 
 \begin_layout Plain Layout
 
-X  = Z
+print("X, Y, Z:", X, Y, Z)
 \end_layout
 
-\begin_layout Plain Layout
-
-Y  = T1
-\end_layout
-
-\begin_layout Plain Layout
-
-Z  = T2
-\end_layout
-
-\begin_layout Plain Layout
-
-print("X: ", X)
-\end_layout
-
-\begin_layout Plain Layout
-
-print("Y: ", Y)
-\end_layout
-
-\begin_layout Plain Layout
-
-print("Z: ", Z)
-\end_layout
-
-\end_inset
-
-
-\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -1814,17 +1785,7 @@ Ingrese Z:
 
 \begin_layout Plain Layout
 
-print("X: ", X)
-\end_layout
-
-\begin_layout Plain Layout
-
-print("Y: ", Y)
-\end_layout
-
-\begin_layout Plain Layout
-
-print("Z: ", Z)
+print("X, Y, Z:", X, Y, Z)
 \end_layout
 
 \begin_layout Plain Layout
@@ -1834,17 +1795,7 @@ X, Y, Z = Z, X, Y
 
 \begin_layout Plain Layout
 
-print("X: ", X)
-\end_layout
-
-\begin_layout Plain Layout
-
-print("Y: ", Y)
-\end_layout
-
-\begin_layout Plain Layout
-
-print("Z: ", Z)
+print("X, Y, Z:", X, Y, Z)
 \end_layout
 
 \end_inset
