@@ -2974,5 +2974,771 @@ Observemos que
 \end_layout
 
 \end_deeper
+\begin_layout Enumerate
+Sean 
+\begin_inset Formula $U=\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $A=\left\{ x/x\text{ es una solución de }x^{2}-1=0\right\} $
+\end_inset
+
+ y 
+\begin_inset Formula $B=\left\{ -1,4\right\} $
+\end_inset
+
+.
+ Calcula:
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\overline{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\overline{B}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\overline{A\cup B}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\overline{A\cap B}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Soluciones
+\end_layout
+
+\begin_layout Standard
+Observemos que 
+\begin_inset Formula $A=\left\{ 1,-1\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\overline{A}=\mathbb{R}-A=\mathbb{R}-\left\{ 1,-1\right\} =\left(-\infty,-1\right)\cup\left(-1,1\right)\cup\left(1,\infty\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\overline{B}=\mathbb{R}-B=\mathbb{R}-\left\{ 4,-1\right\} =\left(-\infty,-1\right)\cup\left(-1,4\right)\cup\left(4,\infty\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\overline{A\cup B}=\overline{\left\{ -1,1,4\right\} }=\mathbb{R}-\left\{ -1,1,4\right\} =\overline{A}-\left\{ 4\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\overline{A\cap B}=\overline{\left\{ -1\right\} }=\mathbb{R}-\left\{ 1\right\} =\left(-\infty,1\right)\cup\left(1,\infty\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Demuestra cada uno de los siguientes enunciados:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $A=B$
+\end_inset
+
+ entonces 
+\begin_inset Formula $\overline{A}=\overline{B}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $A\subseteq B$
+\end_inset
+
+ entonces 
+\begin_inset Formula $\overline{B}\subseteq\overline{A}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A\subseteq B$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $A\cup B=B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A\subseteq B$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $A\cap B=A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(A\cap B\right)\cup\left(A\cap\overline{B}\right)=A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A\cup\left(A\cap B\right)=A$
+\end_inset
+
+ (ley de absorción).
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $A\subseteq B$
+\end_inset
+
+ entonces 
+\begin_inset Formula $A\cap C\subseteq B\cap C$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $A\subseteq B$
+\end_inset
+
+ y 
+\begin_inset Formula $A\subseteq C$
+\end_inset
+
+ entonces 
+\begin_inset Formula $A\cap B\subseteq C$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(A\cap B\right)\cap\left(A\cap\overline{B}\right)=\emptyset$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $A\subseteq B$
+\end_inset
+
+ entonces 
+\begin_inset Formula $A\cap\overline{B}=\emptyset$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A-B=A\cap\overline{B}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Soluciones
+\end_layout
+
+\begin_layout Enumerate
+Por hipótesis sabemos que 
+\begin_inset Formula $A\subseteq B$
+\end_inset
+
+ y 
+\begin_inset Formula $B\subseteq A$
+\end_inset
+
+, veamos que 
+\begin_inset Formula $\overline{A}=\overline{B}$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\overline{A}\subseteq\overline{B}$
+\end_inset
+
+: Sea 
+\begin_inset Formula $x\in\overline{A}$
+\end_inset
+
+, luego por definición de complemento resulta 
+\begin_inset Formula $x\notin A$
+\end_inset
+
+.
+ Supongamos que 
+\begin_inset Formula $x\in B$
+\end_inset
+
+, luego por hipótesis resulta 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ lo cual es una contradicción, por lo tanto 
+\begin_inset Formula $x\notin B$
+\end_inset
+
+, es decir, 
+\begin_inset Formula $x\in\overline{B}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\overline{B}\subseteq\overline{A}$
+\end_inset
+
+: Análogamente puede probarse la otra inclusión.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Por hipótesis sabemos que 
+\begin_inset Formula $A\subseteq B$
+\end_inset
+
+, veamos que 
+\begin_inset Formula $\overline{B}\subseteq\overline{A}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Sea 
+\begin_inset Formula $x\in\overline{B}$
+\end_inset
+
+, luego por definición 
+\begin_inset Formula $x\notin B$
+\end_inset
+
+.
+ Supongamos que 
+\begin_inset Formula $x\in A$
+\end_inset
+
+, entonces por hipótesis resulta 
+\begin_inset Formula $x\in B$
+\end_inset
+
+ lo cual es una contradicción, por lo tanto 
+\begin_inset Formula $x\notin A$
+\end_inset
+
+, es decir, 
+\begin_inset Formula $x\in\overline{A}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\boxed{A\subseteq B\Rightarrow A\cup B=B}$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $A\cup B\subseteq B$
+\end_inset
+
+: Sea 
+\begin_inset Formula $x\in A\cup B$
+\end_inset
+
+, luego 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ o 
+\begin_inset Formula $x\in B$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $x\in A$
+\end_inset
+
+, por hipótesis también resulta 
+\begin_inset Formula $x\in B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $B\subseteq A\cup B$
+\end_inset
+
+: Sea 
+\begin_inset Formula $x\in B$
+\end_inset
+
+, luego por ampliación disyuntiva también resulta 
+\begin_inset Formula $x\in B\lor x\in A$
+\end_inset
+
+ y por definición de unión 
+\begin_inset Formula $x\in A\cup B$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\boxed{A\cup B=B\Rightarrow A\subseteq B}$
+\end_inset
+
+: Sea 
+\begin_inset Formula $x\in A$
+\end_inset
+
+, luego pojr ampliación disyintiva también resulta 
+\begin_inset Formula $x\in A\lor x\in B$
+\end_inset
+
+ y por definición de unión 
+\begin_inset Formula $x\in A\cup B$
+\end_inset
+
+.
+ Finalmente por hipótesis tenemos 
+\begin_inset Formula $x\in B$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\boxed{A\subseteq B\Rightarrow A\cap B=A}$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $A\cap B\subseteq A$
+\end_inset
+
+: Sea 
+\begin_inset Formula $x\in A\cap B$
+\end_inset
+
+ luego por definición 
+\begin_inset Formula $x\in A\land x\in B$
+\end_inset
+
+; en particular 
+\begin_inset Formula $x\in A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $A\subseteq A\cap B$
+\end_inset
+
+: Sea 
+\begin_inset Formula $x\in A$
+\end_inset
+
+, por hipótesis sabemos que 
+\begin_inset Formula $x\in B$
+\end_inset
+
+, luego 
+\begin_inset Formula $x\in A\land x\in B$
+\end_inset
+
+; es decir, 
+\begin_inset Formula $x\in A\cap B$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\boxed{A\cap B=A\Rightarrow A\subseteq B}$
+\end_inset
+
+: Sea 
+\begin_inset Formula $x\in A$
+\end_inset
+
+, como por hipótesis sabemos que 
+\begin_inset Formula $A\subseteq A\cap B$
+\end_inset
+
+ resulta 
+\begin_inset Formula $x\in A\cap B$
+\end_inset
+
+ y por definición 
+\begin_inset Formula $x\in A\land x\in B$
+\end_inset
+
+; en particular 
+\begin_inset Formula $x\in B$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\boxed{\left(A\cap B\right)\cup\left(A\cap\overline{B}\right)\subseteq A}$
+\end_inset
+
+: Sea 
+\begin_inset Formula $x\in\left(A\cap B\right)\cup\left(A\cap\overline{B}\right)$
+\end_inset
+
+ luego por definición resulta 
+\begin_inset Formula $x\in A\cap B\lor x\in A\cap\overline{B}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Si 
+\begin_inset Formula $x\in A\cap B$
+\end_inset
+
+ resulta 
+\begin_inset Formula $x\in A\land x\in B$
+\end_inset
+
+; en particular 
+\begin_inset Formula $x\in A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Si 
+\begin_inset Formula $x\in A\cap\overline{B}$
+\end_inset
+
+ resulta 
+\begin_inset Formula $x\in A\land x\in\overline{B}$
+\end_inset
+
+; en particular 
+\begin_inset Formula $x\in A$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\boxed{A\subseteq\left(A\cap B\right)\cup\left(A\cap\overline{B}\right)}$
+\end_inset
+
+: Sea 
+\begin_inset Formula $x\in A$
+\end_inset
+
+, luego resulta trivial que 
+\begin_inset Formula $x\in A\land\left(x\in B\lor x\notin B\right)$
+\end_inset
+
+ y por ley distributiva resulta 
+\begin_inset Formula $\left(x\in A\land x\in B\right)\lor\left(x\in A\land\notin B\right)$
+\end_inset
+
+; de donde sigue por definiciones que 
+\begin_inset Formula $x\in\left(A\cap B\right)\cup\left(A\cap\overline{B}\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Utiliza las propiedades de operaciones entre conjuntos (dadas en el Teorema
+ 2 de la teoría) para analizar si las siguientes expresiones son equivalentes
+ (justifica cada paso que realices con la propiedad empleada):
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left(A-B\right)\cap\left(B-A\right)=\emptyset$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(A-C\right)\cap\left(B-C\right)\cap\left(A-B\right)=\emptyset$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(A\cup B\right)-C=\left(A-C\right)\cup\left(B-C\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A-\left(A\cap B\right)=A-B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\overline{\left(A\cap B\right)}\cap A=A-B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Soluciones
+\end_layout
+
+\begin_layout Enumerate
+
+\color green
+Verdadero
+\color inherit
+: COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+
+\color green
+Verdadero
+\color inherit
+: COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+
+\color green
+Verdadero
+\color inherit
+: COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+
+\color green
+Verdadero
+\color inherit
+: COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+
+\color green
+Verdadero
+\color inherit
+: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Una empresa de turismo realiza una encuesta entre 100 personas: 40 quieren
+ viajar a Mendoza, 25 desean viajar a Bariloche, 13 de los interrogados
+ quieren ir a Mendoza y Bariloche.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+¿Cuántas personas no realizan excursión?
+\end_layout
+
+\begin_layout Enumerate
+¿Cuántas van a realizar solo 1 de las excursiones?
+\end_layout
+
+\begin_layout Enumerate
+¿Cuántas viajarán solo a Mendoza?
+\end_layout
+
+\begin_layout Enumerate
+¿Cuántas van por lo menos a 1 excursión?
+\end_layout
+
+\begin_layout Paragraph
+Soluciones
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+70 alumnos rindieron un examen de Matemática, Física e Inglés.
+ Los resultados fueron: 20 alumnos rindieron bien las 3 asignaturas, 50
+ rindieron bien Matemática, 30 rindieron bien inglés, 35 rindieron bien
+ Física, 10 alumnos sólo rindierion Matemática y Física, 8 solo rindieron
+ bien Matemática e Inglés, 1 solamente rindió bien Inglés y Física.
+ Si para ser promovidos deberían aprobar 2 materias por lo menos:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+¿Cuántos alumnos se promovieron?
+\end_layout
+
+\begin_layout Enumerate
+¿Cuántos alumnos no se promovieron por adedudar sólo 2 de las materias?
+\end_layout
+
+\begin_layout Enumerate
+¿Cuántos alumnos rindieron mal las 3 materias?
+\end_layout
+
+\begin_layout Paragraph
+Soluciones
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
