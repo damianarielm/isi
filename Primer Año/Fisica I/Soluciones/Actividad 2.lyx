@@ -1,0 +1,1094 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{pgfplots,gensymb}
+\pgfplotsset{compat=1.11}
+\usetikzlibrary{angles,quotes,babel}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style french
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Enumerate
+Calcula las componentes 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+ del vector cuyo módulo es 100m y el angulo que forma con respecto al eje
+ 
+\begin_inset Formula $x$
+\end_inset
+
+ positivo es igual a 
+\begin_inset Formula $30^{\circ}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+begin{axis}[xmin=-15,ymin=-15,xmax=120,ymax=65,xlabel=$x$, ylabel=$y$, ticks=non
+e, axis x line=center, axis y line=center, axis equal image]
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+coordinate (orig) at (0,0);
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+coordinate (a)    at (86.6,50);
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+coordinate (b)    at (1,0);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+addplot[no marks, color=blue, name=a] coordinates{(90,60)} node {$v=(v_x,v_y)$};
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+draw[->, thick, blue] (0,0) -- (86.6,50);
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+draw[dashed, blue] (86.6,0) -- (86.6,50);
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+pic["$30
+\backslash
+degree$", draw, <->, blue, angle eccentricity=1.5, angle radius=1cm] {angle
+ = b--orig--a};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+end{axis}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cos\left(30^{\circ}\right)=\cfrac{v_{x}}{\left|v\right|}=\cfrac{v_{x}}{100m}\iff100m\cdot\cos\left(30^{\circ}\right)=v_{x}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\iff\boxed{v_{x}\approx86,6m}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sin\left(30^{\circ}\right)=\cfrac{v_{y}}{\left|v\right|}=\cfrac{v_{y}}{100m}\iff100m\cdot\sin\left(30^{\circ}\right)=v_{y}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\iff100m\cdot\cfrac{1}{2}=v_{y}\iff\boxed{v_{y}=50m}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Calcula las componentes 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+ del vector cuyo módulo es 200m y el angulo que forma con respecto al eje
+ 
+\begin_inset Formula $x$
+\end_inset
+
+ positivo es igual a 
+\begin_inset Formula $330^{\circ}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+begin{axis}[xmin=-50,ymin=-110,xmax=180,ymax=40,xlabel=$x$, ylabel=$y$,
+ ticks=none, axis x line=center, axis y line=center, axis equal image]
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+coordinate (orig) at (0,0);
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+coordinate (a)    at (173.2,-100);
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+coordinate (b)    at (1,0);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+addplot[no marks, color=blue, name=a] coordinates{(123.2,-100)} node {$v=(v_x,v_y
+)$};
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+draw[->, thick, blue] (0,0) -- (173.2,-100);
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+draw[dashed, blue] (173.2,0) -- (173.2,-100);
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+pic["$330
+\backslash
+degree$", draw, <->, blue, angle eccentricity=2, angle radius=0.5cm] {angle
+ = b--orig--a};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+end{axis}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cos\left(360-330^{\circ}\right)=\cos\left(30^{\circ}\right)=\cfrac{v_{x}}{\left|v\right|}=\cfrac{v_{x}}{200m}\iff100m\cdot\cos\left(30^{\circ}\right)=v_{x}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\iff\boxed{v_{x}\approx173,2m}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sin\left(30^{\circ}\right)=\cfrac{-v_{y}}{\left|v\right|}=\cfrac{-v_{y}}{200m}\iff200m\cdot\sin\left(30^{\circ}\right)=-v_{y}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\iff200m\cdot\cfrac{1}{2}=-v_{y}\iff\boxed{v_{y}=-100m}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Calcula el módulo de un vector cuya componente 
+\begin_inset Formula $x$
+\end_inset
+
+ es igual a 40 m/s y la componente 
+\begin_inset Formula $y$
+\end_inset
+
+ es 30 m/s.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+begin{axis}[xmin=-30,ymin=-10,xmax=55,ymax=40,xlabel=$x$, ylabel=$y$, ticks=none
+, axis x line=center, axis y line=center, axis equal image]
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+coordinate (orig) at (0,0);
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+coordinate (a)    at (40,30);
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+coordinate (b)    at (1,0);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+addplot[no marks, color=blue, name=a] coordinates{(40,-5)} node {$x_v=40m/s$};
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+addplot[no marks, color=blue, name=a] coordinates{(-15,30)} node {$y_v=30m/s$};
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+draw[->, thick, blue] (0,0) -- (40,30);
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+draw[dashed, blue] (40,0) -- (40,30);
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+draw[dashed, blue] (0,30) -- (40,30);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pic["$
+\backslash
+angle_v$", draw, <->, blue, angle eccentricity=2, angle radius=0.5cm] {angle
+ = b--orig--a};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+end{axis}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left|v\right|^{2}=x_{v}^{2}+y_{v}^{2}=40^{2}\cfrac{m^{2}}{s^{2}}+30^{2}\cfrac{m^{2}}{s^{2}}=2500\cfrac{m^{2}}{s^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\iff\left|v\right|=\sqrt{2500}=\boxed{50\cfrac{m}{s}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Calcula el ángulo de un vector cuya componente 
+\begin_inset Formula $x$
+\end_inset
+
+ es igual a 40 m/s y la componente 
+\begin_inset Formula $y$
+\end_inset
+
+ es 30 m/s.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\tan\left(\angle_{v}\right)=\cfrac{30m/s}{40m/s}\iff\angle_{v}=\arctan\left(\cfrac{3}{4}\right)\approx\boxed{36,87^{\circ}}
+\]
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Calcula el módulo de un vector cuya componente 
+\begin_inset Formula $x$
+\end_inset
+
+ es igual a -400 m/s y la componente 
+\begin_inset Formula $y$
+\end_inset
+
+ es 300 m/s.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left|v\right|^{2}=\left(-400\right)^{2}\cfrac{m^{2}}{s^{2}}+300^{2}\cfrac{m^{2}}{s^{2}}=250000\cfrac{m^{2}}{s^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\iff\left|v\right|=\sqrt{250000}=\boxed{500\cfrac{m}{s}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Calcula el ángulo que forma el vector con respecto al eje 
+\begin_inset Formula $x$
+\end_inset
+
+ positivo, si su componente 
+\begin_inset Formula $x$
+\end_inset
+
+ es igual a -400m y la componente 
+\begin_inset Formula $y$
+\end_inset
+
+ es 300 m.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+begin{axis}[xmin=-70,ymin=-10,xmax=40,ymax=45,xlabel=$x$, ylabel=$y$, ticks=none
+, axis x line=center, axis y line=center, axis equal image]
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+coordinate (orig) at (0,0);
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+coordinate (a)    at (-40,30);
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+coordinate (b)    at (1,0);
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+coordinate (c)    at (-1,0);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+addplot[no marks, color=blue, name=a] coordinates{(-40,-5)} node {$x_v=-400m$};
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+addplot[no marks, color=blue, name=a] coordinates{(20,30)} node {$y_v=300m$};
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+draw[->, thick, blue] (0,0) -- (-40,30);
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+draw[dashed, blue] (-40,0) -- (-40,30);
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+draw[dashed, blue] (0,30) -- (-40,30);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pic["$
+\backslash
+angle_v$", draw, <->, blue, angle eccentricity=2.1, angle radius=0.25cm] {angle
+ = b--orig--a};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pic["$
+\backslash
+alpha$", draw, <->, blue, angle eccentricity=1.7, angle radius=0.5cm] {angle
+ = a--orig--c};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+end{axis}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\tan\left(\alpha\right)=\cfrac{300m}{400m}\iff\alpha=\arctan\left(\cfrac{3}{4}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\angle_{v}=180^{\circ}-\alpha=180-\arctan\left(\cfrac{3}{4}\right)\approx\boxed{143,13^{\circ}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Calcula el módulo del vector 
+\begin_inset Formula $a+b$
+\end_inset
+
+ de la Figura 1.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+begin{axis}[xmin=-5,ymin=-3,xmax=7,ymax=12,xlabel=$x$, ylabel=$y$, ticks=none,
+ axis x line=center, axis y line=center, axis equal]
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+coordinate (orig) at (0,0);
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+coordinate (a)    at (6.5,10.3923);
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+coordinate (b)    at (0,1);
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+coordinate (c)    at (-4.5,-2.5);
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+coordinate (d)    at (-1,0);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+addplot[no marks, color=blue, name=a] coordinates{(6.5,10.3923)} node {$a$};
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+addplot[no marks, color=red, name=b] coordinates{(-4.5,-2.5)} node {$b$};
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+draw[->, thick, blue] (0,0) -- (6,10.3923);
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+draw[->, thick, red] (0,0) -- (-4,-2.5);
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+pic["$30
+\backslash
+degree$", draw, <->, blue, angle eccentricity=1.5, angle radius=1cm] {angle
+ = a--orig--b};
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+pic["$30
+\backslash
+degree$", draw, <->, red, angle eccentricity=1.5, angle radius=1cm] {angle
+ = d--orig--c};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+end{axis}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left|a\right|=12m$
+\end_inset
+
+ y 
+\begin_inset Formula $\left|b\right|=5m$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\angle_{a}=90^{\circ}-30^{\circ}=60^{\circ}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\angle_{b}=180^{\circ}+30^{\circ}=210^{\circ}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\angle_{a}^{b}=\angle_{b}-\angle_{a}=210^{\circ}-60^{\circ}=150^{\circ}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left|a+b\right|=\sqrt{\left|a\right|^{2}+\left|b\right|^{2}+2\cdot\left|a\right|\cdot\left|b\right|\cdot\cos\left(\angle_{a}^{b}\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $=\sqrt{144m+25m+120m\cdot\cos\left(150^{\circ}\right)}\approx\boxed{8,067m}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Calcula el ángulo que forma el vector 
+\begin_inset Formula $a+b$
+\end_inset
+
+ con respecto al eje 
+\begin_inset Formula $x$
+\end_inset
+
+ positivo de la Figura 1.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\angle_{a}^{a+b}=\arctan\left(\cfrac{\left|b\right|\sin\left(\angle_{a}^{b}\right)}{\left|a\right|+\left|b\right|\cos\left(\angle_{a}^{b}\right)}\right)=\arctan\left(\cfrac{5m\cdot\sin\left(150^{\circ}\right)}{12m+5m\cdot\cos\left(150^{\circ}\right)}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $=\arctan\left(\cfrac{2,5m}{12m+5m\cdot\cos\left(150^{\circ}\right)}\right)\approx18,05^{\circ}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\angle_{a+b}=\angle_{a}+\angle_{a}^{a+b}\approx\boxed{78,05^{\circ}}$
+\end_inset
+
+.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Calcula el módulo del vector 
+\begin_inset Formula $b-a$
+\end_inset
+
+ de la Figura 1.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left|b-a\right|\approx16,5m
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+De la Figura 1 calcula el ángulo que forma el vector 
+\begin_inset Formula $b-a$
+\end_inset
+
+ con respecto al eje 
+\begin_inset Formula $x$
+\end_inset
+
+ positivo.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\angle_{b-a}\approx231,3^{\circ}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
