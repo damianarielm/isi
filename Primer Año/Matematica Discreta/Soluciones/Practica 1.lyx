@@ -3058,7 +3058,7 @@ Observemos que
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $\overline{A\cap B}=\overline{\left\{ -1\right\} }=\mathbb{R}-\left\{ 1\right\} =\left(-\infty,1\right)\cup\left(1,\infty\right)$
+\begin_inset Formula $\overline{A\cap B}=\overline{\left\{ -1\right\} }=\mathbb{R}-\left\{ -1\right\} =\left(-\infty,-1\right)\cup\left(-1,\infty\right)$
 \end_inset
 
 .
