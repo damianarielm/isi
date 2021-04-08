@@ -1885,10 +1885,1460 @@ Estructura de Desición Simple (IF)
 \end_layout
 
 \begin_layout Enumerate
-COMPLETAR.
+Dados dos números distintos, mostrarlos ordenados en forma creciente.
 \end_layout
 
 \begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Imagenes/ej2-1.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Python:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+NUMERO1 = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese un numero: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+NUMERO2 = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese un numero: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes fld
+\end_inset
+
+Los numeros en orden son: 
+\begin_inset Quotes fld
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+if NUMERO1 < NUMERO2:
+\end_layout
+
+\begin_layout Plain Layout
+
+    print(NUMERO1, NUMERO2)
+\end_layout
+
+\begin_layout Plain Layout
+
+else:
+\end_layout
+
+\begin_layout Plain Layout
+
+    print(NUMERO2, NUMERO1)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Dado un número determinar si es positivo o negativo.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Imagenes/ej2-2.png
+	scale 39
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Python:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+NUMERO = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese un numero: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+if NUMERO < 0:
+\end_layout
+
+\begin_layout Plain Layout
+
+    print(
+\begin_inset Quotes fld
+\end_inset
+
+El numero es negativo.
+\begin_inset Quotes frd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+else:
+\end_layout
+
+\begin_layout Plain Layout
+
+    print(
+\begin_inset Quotes fld
+\end_inset
+
+El numero es positivo.
+\begin_inset Quotes frd
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Dada la medida de cada uno de los tres ángulos de un triángulo determinar
+ e informar mediante un mensaje si pertenecen o no a un triángulo rectángulo
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset space \hspace*{}
+\length -4.5cm
+\end_inset
+
+
+\begin_inset Graphics
+	filename Imagenes/ej2-3.png
+	scale 40
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Python:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+ANGULO1 = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese el primer angulo: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+ANGULO2 = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese el segundo angulo: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+ANGULO3 = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese el tercer angulo: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+SUMA    = ANGULO1 + ANGULO2 + ANGULO3
+\end_layout
+
+\begin_layout Plain Layout
+
+if SUMA == 180 and ANGULO1 > 0 and ANGULO2 > 0 and ANGULO3 > 0:
+\end_layout
+
+\begin_layout Plain Layout
+
+    if ANGULO1 == 90 or ANGULO2 == 90 or ANGULO3 == 90:
+\end_layout
+
+\begin_layout Plain Layout
+
+        print(
+\begin_inset Quotes fld
+\end_inset
+
+Es un triangulo rectangulo.
+\begin_inset Quotes frd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+    else:
+\end_layout
+
+\begin_layout Plain Layout
+
+        print(
+\begin_inset Quotes fld
+\end_inset
+
+No es un triangulo rectangulo.
+\begin_inset Quotes frd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+else:
+\end_layout
+
+\begin_layout Plain Layout
+
+    print(
+\begin_inset Quotes fld
+\end_inset
+
+No es un triangulo
+\begin_inset Quotes frd
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Ingresar tres números enteros distintos.
+ Determinar y mostrar si ingresaron en orden creciente.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset space \hspace*{}
+\length -3cm
+\end_inset
+
+
+\begin_inset Graphics
+	filename Imagenes/ej2-4.png
+	scale 38
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Python:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python,fontsize={\footnotesize}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+NUMERO1 = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese el primer numero: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+NUMERO2 = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese el segundo numero: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+NUMERO3 = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese el tercer numero: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+if NUMERO1 <= NUMERO2 and NUMERO2 <= NUMERO3:
+\end_layout
+
+\begin_layout Plain Layout
+
+    print(
+\begin_inset Quotes fld
+\end_inset
+
+Los numeros se ingresaron en orden.
+\begin_inset Quotes frd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+else:
+\end_layout
+
+\begin_layout Plain Layout
+
+    print(
+\begin_inset Quotes fld
+\end_inset
+
+Los numeros no se ingresaron en orden.
+\begin_inset Quotes frd
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Determinar si el primero de un conjunto de tres números dados, es menor
+ que los otros dos.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset space \hspace*{}
+\length -3cm
+\end_inset
+
+
+\begin_inset Graphics
+	filename Imagenes/ej2-5.png
+	scale 38
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Python:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python,fontsize={\footnotesize}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+NUMERO1 = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese el primer numero: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+NUMERO2 = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese el segundo numero: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+NUMERO3 = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese el tercer numero: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+if NUMERO1 < NUMERO2 and NUMERO1 < NUMERO3:
+\end_layout
+
+\begin_layout Plain Layout
+
+    print(
+\begin_inset Quotes fld
+\end_inset
+
+El primer numero es menor que los otros.
+\begin_inset Quotes frd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+else:
+\end_layout
+
+\begin_layout Plain Layout
+
+    print(
+\begin_inset Quotes fld
+\end_inset
+
+El primer numero no es menor que los otros.
+\begin_inset Quotes frd
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Ingresar tres letras mayúsculas y mostrarlas ordenadas alfabéticamente.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: Existen múltiples formas de resolver este algoritmo, la mas evidente
+ utiliza múltiples estructuras de decisión simple anidadas.
+ La que muetro a continuación utiliza estructuras de decisión simple secuenciale
+s, lo cual considero mas simple.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Imagenes/ej2-6.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Python:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python,fontsize={\normalsize}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+L1 = input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese la primer letra: 
+\begin_inset Quotes fld
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+L2 = input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese la segunda letra: 
+\begin_inset Quotes fld
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+L3 = input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese la tercer letra: 
+\begin_inset Quotes fld
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+if L1 < L2 and L2 < L3:
+\end_layout
+
+\begin_layout Plain Layout
+
+    print(L1, L2, L3)
+\end_layout
+
+\begin_layout Plain Layout
+
+if L1 < L3 and L3 < L2:
+\end_layout
+
+\begin_layout Plain Layout
+
+    print(L1, L3, L2)
+\end_layout
+
+\begin_layout Plain Layout
+
+if L2 < L1 and L1 < L3:
+\end_layout
+
+\begin_layout Plain Layout
+
+    print(L2, L1, L3)
+\end_layout
+
+\begin_layout Plain Layout
+
+if L2 < L3 and L3 < L1:
+\end_layout
+
+\begin_layout Plain Layout
+
+    print(L2, L3, L1)
+\end_layout
+
+\begin_layout Plain Layout
+
+if L3 < L1 and L1 < L2:
+\end_layout
+
+\begin_layout Plain Layout
+
+    print(L3, L1, L2)
+\end_layout
+
+\begin_layout Plain Layout
+
+if L3 < L2 and L2 < L1:
+\end_layout
+
+\begin_layout Plain Layout
+
+    print(L3, L2, L1)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Color Box
+status open
+
+\begin_layout Plain Layout
+Como alternativa al anterior algoritmo, se presenta el siguiente programa
+ que solo utiliza 3 estructuras de decisión simple.
+ Dicho algoritmo se llama 
+\begin_inset Quotes fld
+\end_inset
+
+ordenamiento burbuja
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=Python,fontsize={\normalsize}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+L1 = input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese la primer letra: 
+\begin_inset Quotes fld
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+L2 = input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese la segunda letra: 
+\begin_inset Quotes fld
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+L3 = input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese la tercer letra: 
+\begin_inset Quotes fld
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+if L1 > L2:
+\end_layout
+
+\begin_layout Plain Layout
+
+  L1, L2 = L2, L1
+\end_layout
+
+\begin_layout Plain Layout
+
+if L2 > L3:
+\end_layout
+
+\begin_layout Plain Layout
+
+  L2, L3 = L3, L2
+\end_layout
+
+\begin_layout Plain Layout
+
+if L1 > L2:
+\end_layout
+
+\begin_layout Plain Layout
+
+  L1, L2 = L2, L1
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+print(L1, L2, L3)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Se desea controlar en una fábrica la calidad de dos tipos de piezas que
+ denominaremos A y B.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Se dan como datos el tipo de pieza y su medida en milímetros y se debe indicar
+ si cumple con las especificaciones sabiendo que: 
+\end_layout
+
+\begin_layout Itemize
+Las piezas de tipo A deben medir 165 mm y se admite un error de +/-2 mm.
+\end_layout
+
+\begin_layout Itemize
+Las piezas de tipo B deben medir 180 mm y se admite un error de +/-3 mm.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset space \hspace*{}
+\length -5.5cm
+\end_inset
+
+
+\begin_inset Graphics
+	filename Imagenes/ej2-7.png
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Python:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python,fontsize={\normalsize}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+TIPO   = input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese el tipo de pieza: 
+\begin_inset Quotes fld
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+MEDIDA = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese la medida de la pieza: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+if TIPO == 
+\begin_inset Quotes fld
+\end_inset
+
+A
+\begin_inset Quotes frd
+\end_inset
+
+ and 163 <= MEDIDA and MEDIDA <= 167:
+\end_layout
+
+\begin_layout Plain Layout
+
+    print(
+\begin_inset Quotes fld
+\end_inset
+
+La pieza cumple la especificacion.
+\begin_inset Quotes frd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+elif TIPO == 
+\begin_inset Quotes fld
+\end_inset
+
+B
+\begin_inset Quotes frd
+\end_inset
+
+ and 177 <= MEDIDA and MEDIDA <= 183:
+\end_layout
+
+\begin_layout Plain Layout
+
+    print(
+\begin_inset Quotes fld
+\end_inset
+
+La pieza cumple la especificacion.
+\begin_inset Quotes frd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+else:
+\end_layout
+
+\begin_layout Plain Layout
+
+    print(
+\begin_inset Quotes fld
+\end_inset
+
+La pieza no cumple la especificacion.
+\begin_inset Quotes frd
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Se leen tres números positivos.
+ Determinar si son las longitudes de los lados de un triángulo: Recordar
+ que en todo triangulo cada lado es menor o igual que la suma de los otros
+ dos y menor que su diferencia (basta mostrarlo para un lado).
+ En caso afirmativo, informar si el mismo es equilátero (3 lados iguales),
+ isósceles (2 lados iguales) o escaleno (3 lados distintos).
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Color Box
+status open
+
+\begin_layout Plain Layout
+El enunciado que da origen al problema, y la supuesta solución que brindó
+ la cátedra no determinan en forma correcta algunos triángulos.
+ La solución que se presenta a continuación es correcta.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+NSD:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Imagenes/ej2-8.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Python:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python,fontsize={\normalsize}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+L1 = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese el primer lado: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+L2 = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese el segundo lado: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+L3 = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese el tercer lado: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+if L1 + L2 <= L3 or L1 + L3 <= L2 or L2 + L3 <= L1:
+\end_layout
+
+\begin_layout Plain Layout
+
+    print(
+\begin_inset Quotes fld
+\end_inset
+
+No es un triangulo.
+\begin_inset Quotes frd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+else:
+\end_layout
+
+\begin_layout Plain Layout
+
+    print(
+\begin_inset Quotes fld
+\end_inset
+
+Es un triangulo.
+\begin_inset Quotes frd
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Una distribuidora de libros vende a librerías y a particulares.
+ Aplica bonificaciones por cantidad según el siguiente criterio:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Librerías: hasta 24 unidades, el 20%; más de 24 unidades, el 25%.
+\end_layout
+
+\begin_layout Itemize
+Particulares: menos de 6 unidades, nada; desde 6 hasta 18 unidades, el 5%;
+ y más de 18 unidades, el 10%.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El tipo de cliente está codificado: 
+\begin_inset Quotes fld
+\end_inset
+
+L
+\begin_inset Quotes frd
+\end_inset
+
+ para librerías y 
+\begin_inset Quotes fld
+\end_inset
+
+P
+\begin_inset Quotes frd
+\end_inset
+
+ para particular.
+ Dado el importe bruto total de una compra de libros, el tipo de cliente
+ y la cantidad total pedida por el mismo, determinar el importe bruto bonificado.
+\end_layout
+
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset space \hspace*{}
+\length -1.5cm
+\end_inset
+
+
+\begin_inset Graphics
+	filename Imagenes/ej2-9.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Python:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python,fontsize={\normalsize}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+TIPO     = input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese el tipo de cliente: 
+\begin_inset Quotes fld
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+IMPORTE  = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese el importe bruto: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+CANTIDAD = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese la cantidad de unidades: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+if TIPO == 
+\begin_inset Quotes fld
+\end_inset
+
+L
+\begin_inset Quotes frd
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Plain Layout
+
+    if CANTIDAD <= 24:
+\end_layout
+
+\begin_layout Plain Layout
+
+        BONIFICACION = 20
+\end_layout
+
+\begin_layout Plain Layout
+
+    else:
+\end_layout
+
+\begin_layout Plain Layout
+
+        BONIFICACION = 25
+\end_layout
+
+\begin_layout Plain Layout
+
+else:
+\end_layout
+
+\begin_layout Plain Layout
+
+    if CANTIDAD < 6:
+\end_layout
+
+\begin_layout Plain Layout
+
+        BONIFICACION = 0
+\end_layout
+
+\begin_layout Plain Layout
+
+    elif CANTIDAD <= 18:
+\end_layout
+
+\begin_layout Plain Layout
+
+        BONIFICACION = 5
+\end_layout
+
+\begin_layout Plain Layout
+
+    else:
+\end_layout
+
+\begin_layout Plain Layout
+
+        BONIFICACION = 10
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+IMPORTEB = IMPORTE - (IMPORTE * BONIFICACION / 100)
+\end_layout
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes fld
+\end_inset
+
+El importe bonificado es:
+\begin_inset Quotes frd
+\end_inset
+
+, IMPORTEB)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+11)
+\end_layout
+
+\end_inset
+
+Dado como dato la cantidad de kilowatios consumidos por un usuario en un
+ mes, calcular el importe a pagar por el mismo teniendo en cuenta que: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Si la cantidad de kilowatios consumidos es menor ó igual a 200, el precio
+ del kilowatio es de 0.05 pesos.
+\end_layout
+
+\begin_layout Itemize
+Si la cantidad de kilowatios consumidos es mayor que 200 y menor que 1000,
+ el precio del kilowatio es de 0.1 pesos.
+\end_layout
+
+\begin_layout Itemize
+Si la cantidad de kilowatios consumidos es mayor ó igual que 1000, el precio
+ del kilowatio es de 0.15 pesos.
+\end_layout
+
 \begin_layout Paragraph
 Solución
 \end_layout
@@ -1903,7 +3353,29 @@ Python: COMPLETAR.
 
 \end_deeper
 \begin_layout Enumerate
-COMPLETAR.
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+12)
+\end_layout
+
+\end_inset
+
+ Se ingresan seis números positivos diferentes.
+ Al final mostrar un cartel que diga: 
+\begin_inset Quotes fld
+\end_inset
+
+El mayor número ingresado fue el xxx
+\begin_inset Quotes frd
+\end_inset
+
+.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -1912,16 +3384,240 @@ Solución
 \end_layout
 
 \begin_layout Itemize
-NSD: COMPLETAR.
+NSD:
 \end_layout
 
-\begin_layout Itemize
-Python: COMPLETAR.
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Imagenes/ej2-12.png
+	scale 40
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Color Box
+status open
+
+\begin_layout Plain Layout
+El mismo programa puede realizarse con solo dos variables, si en vez de
+ solicitar toda la entrada y luego computar, computamos la salida a medida
+ que obtenemos la entrada.
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/ej2-12-alt.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \end_deeper
+\begin_layout Itemize
+Python:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python,fontsize={\normalsize}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+MAYOR  = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese el 1er numero: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+NUMERO = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese el 2do numero: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+if NUMERO > MAYOR:
+\end_layout
+
+\begin_layout Plain Layout
+
+    MAYOR = NUMERO
+\end_layout
+
+\begin_layout Plain Layout
+
+NUMERO = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese el 3er numero: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+if NUMERO > MAYOR:
+\end_layout
+
+\begin_layout Plain Layout
+
+    MAYOR = NUMERO
+\end_layout
+
+\begin_layout Plain Layout
+
+NUMERO = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese el 4to numero: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+if NUMERO > MAYOR:
+\end_layout
+
+\begin_layout Plain Layout
+
+    MAYOR = NUMERO
+\end_layout
+
+\begin_layout Plain Layout
+
+NUMERO = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese el 5to numero: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+if NUMERO > MAYOR:
+\end_layout
+
+\begin_layout Plain Layout
+
+    MAYOR = NUMERO
+\end_layout
+
+\begin_layout Plain Layout
+
+NUMERO = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese el 6to numero: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+if NUMERO > MAYOR:
+\end_layout
+
+\begin_layout Plain Layout
+
+    MAYOR = NUMERO
+\end_layout
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes fld
+\end_inset
+
+El mayor es:
+\begin_inset Quotes frd
+\end_inset
+
+, MAYOR)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Enumerate
-COMPLETAR.
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+13)
+\end_layout
+
+\end_inset
+
+El mismo que el anterior, pero indicar la posición en que entró el mayor.
+ (Ej.
+ 
+\begin_inset Quotes fld
+\end_inset
+
+El mayor fue xx y fue ingresado quinto
+\begin_inset Quotes frd
+\end_inset
+
+).
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -1930,196 +3626,239 @@ Solución
 \end_layout
 
 \begin_layout Itemize
-NSD: COMPLETAR.
-\end_layout
-
-\begin_layout Itemize
-Python: COMPLETAR.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-COMPLETAR.
+NSD:
 \end_layout
 
 \begin_deeper
-\begin_layout Paragraph
-Solución
-\end_layout
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Imagenes/ej2-13.png
+	scale 40
 
-\begin_layout Itemize
-NSD: COMPLETAR.
-\end_layout
+\end_inset
 
-\begin_layout Itemize
-Python: COMPLETAR.
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \end_deeper
-\begin_layout Enumerate
-COMPLETAR.
+\begin_layout Itemize
+Python:
 \end_layout
 
 \begin_deeper
-\begin_layout Paragraph
-Solución
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python,fontsize={\normalsize}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+MAYOR  = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese el 1er numero: 
+\begin_inset Quotes fld
+\end_inset
+
+))
 \end_layout
 
-\begin_layout Itemize
-NSD: COMPLETAR.
+\begin_layout Plain Layout
+
+POSICION = 1
 \end_layout
 
-\begin_layout Itemize
-Python: COMPLETAR.
+\begin_layout Plain Layout
+
+NUMERO = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese el 2do numero: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+if NUMERO > MAYOR:
+\end_layout
+
+\begin_layout Plain Layout
+
+    MAYOR = NUMERO
+\end_layout
+
+\begin_layout Plain Layout
+
+    POSICION = 2
+\end_layout
+
+\begin_layout Plain Layout
+
+NUMERO = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese el 3er numero: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+if NUMERO > MAYOR:
+\end_layout
+
+\begin_layout Plain Layout
+
+    MAYOR = NUMERO
+\end_layout
+
+\begin_layout Plain Layout
+
+    POSICION = 3
+\end_layout
+
+\begin_layout Plain Layout
+
+NUMERO = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese el 4to numero: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+if NUMERO > MAYOR:
+\end_layout
+
+\begin_layout Plain Layout
+
+    MAYOR = NUMERO
+\end_layout
+
+\begin_layout Plain Layout
+
+    POSICION = 4
+\end_layout
+
+\begin_layout Plain Layout
+
+NUMERO = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese el 5to numero: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+if NUMERO > MAYOR:
+\end_layout
+
+\begin_layout Plain Layout
+
+    MAYOR = NUMERO
+\end_layout
+
+\begin_layout Plain Layout
+
+    POSICION = 5
+\end_layout
+
+\begin_layout Plain Layout
+
+NUMERO = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese el 6to numero: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+if NUMERO > MAYOR:
+\end_layout
+
+\begin_layout Plain Layout
+
+    MAYOR = NUMERO
+\end_layout
+
+\begin_layout Plain Layout
+
+    POSICION = 6
+\end_layout
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes fld
+\end_inset
+
+El mayor es:
+\begin_inset Quotes frd
+\end_inset
+
+, MAYOR, 
+\begin_inset Quotes fld
+\end_inset
+
+y la posicion es
+\begin_inset Quotes frd
+\end_inset
+
+, POSICION)
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
-\begin_layout Enumerate
-COMPLETAR.
-\end_layout
-
-\begin_deeper
-\begin_layout Paragraph
-Solución
-\end_layout
-
-\begin_layout Itemize
-NSD: COMPLETAR.
-\end_layout
-
-\begin_layout Itemize
-Python: COMPLETAR.
-\end_layout
-
 \end_deeper
 \begin_layout Enumerate
-COMPLETAR.
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+14)
 \end_layout
 
-\begin_deeper
-\begin_layout Paragraph
-Solución
-\end_layout
+\end_inset
 
-\begin_layout Itemize
-NSD: COMPLETAR.
-\end_layout
-
-\begin_layout Itemize
-Python: COMPLETAR.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-COMPLETAR.
-\end_layout
-
-\begin_deeper
-\begin_layout Paragraph
-Solución
-\end_layout
-
-\begin_layout Itemize
-NSD: COMPLETAR.
-\end_layout
-
-\begin_layout Itemize
-Python: COMPLETAR.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-COMPLETAR.
-\end_layout
-
-\begin_deeper
-\begin_layout Paragraph
-Solución
-\end_layout
-
-\begin_layout Itemize
-NSD: COMPLETAR.
-\end_layout
-
-\begin_layout Itemize
-Python: COMPLETAR.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-COMPLETAR.
-\end_layout
-
-\begin_deeper
-\begin_layout Paragraph
-Solución
-\end_layout
-
-\begin_layout Itemize
-NSD: COMPLETAR.
-\end_layout
-
-\begin_layout Itemize
-Python: COMPLETAR.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-COMPLETAR.
-\end_layout
-
-\begin_deeper
-\begin_layout Paragraph
-Solución
-\end_layout
-
-\begin_layout Itemize
-NSD: COMPLETAR.
-\end_layout
-
-\begin_layout Itemize
-Python: COMPLETAR.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-COMPLETAR.
-\end_layout
-
-\begin_deeper
-\begin_layout Paragraph
-Solución
-\end_layout
-
-\begin_layout Itemize
-NSD: COMPLETAR.
-\end_layout
-
-\begin_layout Itemize
-Python: COMPLETAR.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-COMPLETAR.
-\end_layout
-
-\begin_deeper
-\begin_layout Paragraph
-Solución
-\end_layout
-
-\begin_layout Itemize
-NSD: COMPLETAR.
-\end_layout
-
-\begin_layout Itemize
-Python: COMPLETAR.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-COMPLETAR.
+ Se dan dos valores cualesquiera enteros.
+ Si el primero es mayor que el segundo, restarle al primero un 20%, pero
+ si el segundo es el mayor restarle al segundo un 15%.
+ Con estos nuevos valores, si el primero quedo mayor a 100 y el segundo
+ mayor a 150, se lo consideran valores correctos, de lo contrario es un
+ intervalo de riesgo.
 \end_layout
 
 \begin_deeper
