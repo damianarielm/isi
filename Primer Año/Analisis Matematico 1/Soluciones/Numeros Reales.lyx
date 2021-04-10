@@ -76,6 +76,7 @@ tcolorbox
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
+\bullet 1 0 9 -1
 \tracking_changes false
 \output_changes false
 \html_math_output 0
@@ -2611,5 +2612,934 @@ status open
  Representar en el eje real los siguientes conjuntos:
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $A=\left\{ x/x\in\mathbb{R}\land x=2t+1\land-4\leq t<3\land t\in\mathbb{Z}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $B=\left\{ u/u=2m^{2}\land m\in\mathbb{N}\land6<m\leq10\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $C=\left\{ x\in\mathbb{R}/x^{2}=p\land p\in\mathbb{Z}^{-}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $D=\left\{ x\in\mathbb{R}/-2<x\leq7\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Soluciones
+\end_layout
+
+\begin_layout Enumerate
+Observemos que 
+\begin_inset Formula 
+\[
+A=\left\{ -4\cdot2+1,-3\cdot2+1,-2\cdot2+1,-1\cdot2+1,0\cdot2+1,1\cdot2+1,2\cdot2+1\right\} 
+\]
+
+\end_inset
+
+es decir que 
+\begin_inset Formula $A=\left\{ -7,-5,-3,-1,1,3,5\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (-7,0) -- (5,0);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+foreach 
+\backslash
+x in {-7,-6,-5,-4,-3,-2,-1,0,1,2,3,4,5}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+draw[thick] (
+\backslash
+x,2pt) -- (
+\backslash
+x,-2pt) node[below] {
+\backslash
+x};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node[color=blue] at (-7,0) {
+\backslash
+textbullet};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node[color=blue] at (-5,0) {
+\backslash
+textbullet};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node[color=blue] at (-3,0) {
+\backslash
+textbullet};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node[color=blue] at (-1,0) {
+\backslash
+textbullet};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node[color=blue] at (1,0) {
+\backslash
+textbullet};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node[color=blue] at (3,0) {
+\backslash
+textbullet};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node[color=blue] at (5,0) {
+\backslash
+textbullet};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Observemos que 
+\begin_inset Formula $B=\left\{ 2\cdot7^{2},2\cdot8^{2},2\cdot9^{2},2\cdot10^{2}\right\} $
+\end_inset
+
+, es decir que 
+\begin_inset Formula $B=\left\{ 98,128,162,200\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[scale=0.1]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (90,0) -- (200,0);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+foreach 
+\backslash
+x in {90,98,110,128,150,162,170,190,200}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+draw[thick] (
+\backslash
+x,20pt) -- (
+\backslash
+x,-20pt) node[below] {
+\backslash
+x};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node[color=blue] at (98,0) {
+\backslash
+textbullet};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node[color=blue] at (128,0) {
+\backslash
+textbullet};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node[color=blue] at (162,0) {
+\backslash
+textbullet};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node[color=blue] at (200,0) {
+\backslash
+textbullet};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Observemos que ningún número real al cuadrado es negativo, luego 
+\begin_inset Formula $C=\emptyset$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (-5,0) -- (5,0);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+foreach 
+\backslash
+x in {-4,-3,-2,-1,0,1,2,3,4}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+draw[thick] (
+\backslash
+x,2pt) -- (
+\backslash
+x,-2pt) node[below] {
+\backslash
+x};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Observemos que 
+\begin_inset Formula $D=\left(-2,7\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[scale=0.7]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (-8,0) -- (10,0);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+foreach 
+\backslash
+x in {-7,-5,-2,-1,0,1,2,3,4,5,7,8,9}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+draw[thick] (
+\backslash
+x,2pt) -- (
+\backslash
+x,-2pt) node[below] {
+\backslash
+x};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[{(-]}, thick, blue] (-2,0) -- (7,0);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+6.
+\end_layout
+
+\end_inset
+
+ Encontrar el conjunto solución para cada una de las siguientes inecuaciones
+ o sistemas de inecuaciones:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Multiple Columns
+status open
+
+\begin_layout Enumerate
+\begin_inset Formula $3x-1\geq2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $-1<-2x+3\leq5$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\begin{cases}
+4x+1>2\\
+x-3\leq3
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\begin{cases}
+3x-2>1\\
+x<4\\
+x>3
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\begin{cases}
+-x>5\\
+-6x\geq3
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Soluciones
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $3x-1\geq2\iff3x\geq3\iff x\geq1$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\boxed{S=\left[1,\infty\right)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $-1<-2x+3\leq5\iff-4<-2x\leq2\iff2>x\geq-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\boxed{S=\left[-1,2\right)}$
+\end_inset
+
+.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\begin{cases}
+4x+1>2\\
+x-3\leq3
+\end{cases}\iff\begin{cases}
+4x>1\\
+x\leq6
+\end{cases}\iff\begin{cases}
+x>\frac{1}{4}\\
+x\leq6
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\boxed{S=\left(\frac{1}{4},\infty\right)\cap\left(-\infty,6\right]=\left(\frac{1}{4},6\right]}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\begin{cases}
+3x-2>1\\
+x<4\\
+x>3
+\end{cases}\iff\begin{cases}
+x>1\\
+x<4\\
+x>3
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\boxed{S=\left(1,\infty\right)\cap\left(-\infty,4\right)\cap\left(3,\infty\right)=\left(3,4\right)}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+7.
+\end_layout
+
+\end_inset
+
+ Hallar el conjunto solución en cada caso:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Multiple Columns
+status open
+
+\begin_layout Enumerate
+\begin_inset Formula $\cfrac{5x-2}{x}>1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $-1<\cfrac{3x+2}{x-2}\leq3$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\cfrac{2}{-x+3}<0$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Soluciones
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\cfrac{5x-2}{x}>1\iff\cfrac{5x-2}{x}-1>0\iff\cfrac{5x-2}{x}-\cfrac{x}{x}>0\iff$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\cfrac{5x-2-x}{x}>0\iff\cfrac{4x-2}{x}>0\iff$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $4x-2>0\land x>0\iff4x>2\land x>0\iff x>\frac{1}{2}\land x>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $4x-2<0\land x<0\iff4x<2\land x<0\iff x<\frac{1}{2}\land x<0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\boxed{S=\left(\frac{1}{2},\infty\right)\cup\left(-\infty,0\right)}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+8.
+\end_layout
+
+\end_inset
+
+ Resolver y verificar las soluciones en cada caso:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $3\left|x\right|-4=5$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|x-3\right|=\left|x+5\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|\left|x-2\right|-2\right|=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|\sqrt[3]{\left|x+3\right|}-12.531x\cdot10^{-17}\right|=-7$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Soluciones
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $3\left|x\right|-4=5\iff3\left|x\right|=9\iff\left|x\right|=3\iff x=3\lor x=-3$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\boxed{S=\left\{ -3,3\right\} }$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Verificamos:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $3\left|3\right|-4=3\cdot3-4=9-4=5$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $3\left|-3\right|-4=3\cdot3-4=9-4=5$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left|x-3\right|=\left|x+5\right|\iff$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $x-3=$
+\end_inset
+
+
+\begin_inset Formula $\left|x+5\right|\iff$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $x+5=x-3\iff8=0x\iff8=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\text{\ensuremath{x+5=-x+3\iff2=-2x\iff\boxed{x=-1}}}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $x-3=-$
+\end_inset
+
+
+\begin_inset Formula $\left|x+5\right|\iff$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\text{\ensuremath{-\left(x+5\right)=x-3\iff-x-5=x-3\iff-2=2x\iff\boxed{x=-1}}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\text{\ensuremath{-\left(x+5\right)=-x+3\iff-x-5=-x+3\iff-8=0x\iff-8=0}}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Verificamos:
+\begin_inset Formula 
+\[
+\left|-1-3\right|=\left|-1+5\right|\iff\left|-4\right|=\left|4\right|\iff4=4
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Llamaremos 
+\begin_inset Formula $y=\left|x-2\right|$
+\end_inset
+
+ luego debemos resolver 
+\begin_inset Formula $\left|y-2\right|=1$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left|y-2\right|=1\iff y-2=1\lor y-2=-1\iff y=3\lor y=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Finalmente despejamos 
+\begin_inset Formula $x$
+\end_inset
+
+ para cada valor de 
+\begin_inset Formula $y$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $3=\left|x-2\right|\iff x-2=3\lor x-2=-3\iff x=5\lor x=-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $1=\left|x-2\right|\iff x-2=1\lor x-2=-1\iff x=3\lor x=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Es decir que el conjunto solución es: 
+\begin_inset Formula $\boxed{S=\left\{ -1,1,3,5\right\} }$
+\end_inset
+
+.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Verificamos:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left|\left|\left(-1\right)-2\right|-2\right|=\left|\left|-3\right|-2\right|=\left|3-2\right|=\left|1\right|=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left|\left|1-2\right|-2\right|=\left|\left|-1\right|-2\right|=\left|1-2\right|=\left|-1\right|=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left|\left|3-2\right|-2\right|=\left|\left|1\right|-2\right|=\left|1-2\right|=\left|-1\right|=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left|\left|5-2\right|-2\right|=\left|\left|3\right|-2\right|=\left|3-2\right|=\left|1\right|=1$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Puesto que para cualquier numero 
+\begin_inset Formula $r\in\mathbb{R}$
+\end_inset
+
+ resulta 
+\begin_inset Formula $\left|r\right|\geq0$
+\end_inset
+
+; la ecuación planteada no tiene soluciones.
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
