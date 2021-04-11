@@ -1460,7 +1460,7 @@ Soluciones
 
 \begin_layout Standard
 \begin_inset Flex Multiple Columns
-status collapsed
+status open
 
 \begin_layout Enumerate
 \begin_inset ERT
@@ -1529,7 +1529,7 @@ Sea
 \end_inset
 
 .
- Analiza la veracidad y falsedad de cada una d elas siguientes inclusiones,
+ Analiza la veracidad y falsedad de cada una de las siguientes inclusiones,
  justifica tu respuesta:
 \end_layout
 
@@ -2199,7 +2199,7 @@ Soluciones
 
 \begin_layout Standard
 Observemos primero que 
-\begin_inset Formula $\mathcal{P}\left(A\right)=\left\{ \emptyset,\left\{ a\right\} ,\left\{ b\right\} ,\left\{ c\right\} ,\left\{ a,b\right\} ,\left\{ b,c\right\} ,A\right\} $
+\begin_inset Formula $\mathcal{P}\left(A\right)=\left\{ \emptyset,\left\{ a\right\} ,\left\{ b\right\} ,\left\{ c\right\} ,\left\{ a,c\right\} ,\left\{ a,b\right\} ,\left\{ b,c\right\} ,A\right\} $
 \end_inset
 
 .
@@ -3546,9 +3546,69 @@ Si
 
 \end_deeper
 \begin_layout Enumerate
-COMPLETAR.
+\begin_inset space ~
+\end_inset
+
+
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\boxed{A\cup\left(A\cap B\right)\subseteq A}$
+\end_inset
+
+: Sea 
+\begin_inset Formula $x\in A\cup\left(A\cap B\right)$
+\end_inset
+
+, luego por definición de union 
+\begin_inset Formula $x\in A\lor x\in A\cap B$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ entonces trivialmente 
+\begin_inset Formula $x\in A$
+\end_inset
+
+; de lo contrario si 
+\begin_inset Formula $x\in A\cap B$
+\end_inset
+
+ por definición de intersección 
+\begin_inset Formula $x\in A\land x\in B$
+\end_inset
+
+, en particular 
+\begin_inset Formula $x\in A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\boxed{A\subseteq A\cup\left(A\cap B\right)}$
+\end_inset
+
+: Sea 
+\begin_inset Formula $x\in A$
+\end_inset
+
+, luego por ampliación disyuntiva resulta 
+\begin_inset Formula $x\in A\lor\left(x\in A\cap B\right)$
+\end_inset
+
+, es decir, 
+\begin_inset Formula $x\in A\cup\left(A\cap B\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 COMPLETAR.
 \end_layout
@@ -3610,6 +3670,10 @@ Utiliza las propiedades de operaciones entre conjuntos (dadas en el Teorema
 \end_inset
 
 .
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Paragraph
@@ -3621,9 +3685,77 @@ Soluciones
 \color green
 Verdadero
 \color inherit
-: COMPLETAR.
+:
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{cc}
+ & \left(A-B\right)\cap\left(B-A\right)\\
+= & \left\langle \text{Ejercicio }20.k\right\rangle \\
+ & \left(A\cap\overline{B}\right)\cap\left(B\cap\overline{A}\right)\\
+= & \left\langle \text{Ley asociativa}\right\rangle \\
+ & A\cap\left(\overline{B}\cap B\right)\cap\overline{A}\\
+= & \left\langle \text{Ley conmutativa}\right\rangle \\
+ & A\cap\left(B\cap\overline{B}\right)\cap\overline{A}\\
+= & \left\langle \text{Ejercicio }20.j\right\rangle \\
+ & A\cap\emptyset\cap\overline{A}\\
+= & \left\langle \text{Ley de acotación}\right\rangle \\
+ & \emptyset\cap\overline{A}\\
+= & \left\langle \text{Ley conmutativa}\right\rangle \\
+ & \overline{A}\cap\emptyset\\
+= & \left\langle \text{Ley de acotación}\right\rangle \\
+ & \emptyset
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\color green
+Verdadero
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{cc}
+ & \left(A-C\right)\cap\left(B-C\right)\cap\left(A-B\right)\\
+= & \left\langle \text{Ejercicio }20.k\right\rangle \\
+ & \left(A\cap\overline{C}\right)\cap\left(B\cap\overline{C}\right)\cap\left(A\cap\overline{B}\right)\\
+= & \left\langle \text{Ley asociativa}\right\rangle \\
+ & A\cap\overline{C}\cap B\cap\overline{C}\cap A\cap\overline{B}\\
+= & \left\langle \text{Ley conmutativa}\right\rangle \\
+ & \left(B\cap\overline{B}\right)\cap A\cap\overline{C}\cap\overline{C}\cap A\\
+= & \left\langle \text{Ley de complemento}\right\rangle \\
+ & \emptyset\cap A\cap\overline{C}\cap\overline{C}\cap A\\
+= & \left\langle \text{Ley asociativa}\right\rangle \\
+ & \emptyset\cap\left(A\cap\overline{C}\cap\overline{C}\cap A\right)\\
+= & \left\langle \text{Ley de acotación}\right\rangle \\
+ & \emptyset
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 
 \color green
@@ -3637,17 +3769,36 @@ Verdadero
 \color green
 Verdadero
 \color inherit
-: COMPLETAR.
+:
 \end_layout
 
-\begin_layout Enumerate
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{cc}
+ & A-\left(A\cap B\right)\\
+= & \left\langle \text{Ejercicio }20.k\right\rangle \\
+ & A\cap\left(\overline{A\cap B}\right)\\
+= & \left\langle \text{Ley de DeMorgan}\right\rangle \\
+ & A\cap\left(\overline{A}\cup\overline{B}\right)\\
+= & \left\langle \text{Ley distributiva}\right\rangle \\
+ & \left(A\cap\overline{A}\right)\cup\left(A\cap\overline{B}\right)\\
+= & \left\langle \text{Ley de complemento}\right\rangle \\
+ & \emptyset\cup\left(A\cap\overline{B}\right)\\
+= & \left\langle \text{Ley de identidad}\right\rangle \\
+ & A\cap\overline{B}\\
+= & \left\langle \text{Ejercicio }20.k\right\rangle \\
+ & A-B
+\end{array}
+\]
 
-\color green
-Verdadero
-\color inherit
-: COMPLETAR.
+\end_inset
+
+
 \end_layout
 
+\end_deeper
 \begin_layout Enumerate
 
 \color green
@@ -3684,20 +3835,98 @@ Una empresa de turismo realiza una encuesta entre 100 personas: 40 quieren
 Soluciones
 \end_layout
 
-\begin_layout Enumerate
-COMPLETAR.
+\begin_layout Standard
+Observemos que:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Multiple Columns
+status open
+
+\begin_layout Itemize
+\begin_inset Formula $\left|U\right|=100$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left|M\right|=40$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left|B\right|=25$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left|M\cap B\right|=13$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
-COMPLETAR.
+\begin_inset Formula $\left|U\right|-\left|M\right|-\left|B\right|+\left|M\cap B\right|=100-40-25+13=48$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Enumerate
-COMPLETAR.
+\begin_inset Formula $\left(\left|M\right|-\left|M\cap B\right|\right)+\left(\left|B\right|-\left|M\cap B\right|\right)=\left(40-13\right)+\left(25-13\right)=27+12=39$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Enumerate
-COMPLETAR.
+\begin_inset Formula $\left|M\right|-\left|M\cap B\right|=40-13=27$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|M\right|+\left|B\right|-\left|M\cap B\right|=40+25-13=52$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{venndiagram2sets}[tikzoptions={scale=0.8}, overlap=1cm, labelAB=13,
+ labelOnlyA=27, labelNotAB=48, labelOnlyB=12, labelA=M]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{venndiagram2sets}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -3725,6 +3954,150 @@ COMPLETAR.
 
 \begin_layout Paragraph
 Soluciones
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+De los 500 asociados a un banco, 240 son agricultores, 300 son ganaderos,
+ 190 son avicultores, 100 agricultores y ganaderos, 80 son agricultores
+ y avicultores, 150 son ganaderos y avicultores, 50 realizan las 3 actividades.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+¿Cuántos son los que no desarrollan ninguna de las actividades? 
+\end_layout
+
+\begin_layout Enumerate
+¿Cuántos son los que únicamente tienen una actividad?
+\end_layout
+
+\begin_layout Enumerate
+¿Cuántos son los que al menos tienen 2 actividades?
+\end_layout
+
+\begin_layout Enumerate
+¿Cuáles son ganaderos únicamente? 
+\end_layout
+
+\begin_layout Enumerate
+¿Cuáles son avicultores solamente?
+\end_layout
+
+\begin_layout Paragraph
+Soluciones
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+En un club 300 socios juegan al tenis, 230 al básquet, 290 hacen natación,
+ 120 juegan tenis y básquet, 90 jugadores de tenis practican natación y
+ 70 hacen básquet y natación, mientras que 50 practican los tres deportes
+ y los 30 restantes no hacen ninguno.
+ Calcula el número de socios que practican solamente un deporte, el número
+ de los que practican un par de deportes y el total de socios.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Standard
+COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Se reparten entre 21 niños caramelos, pastillas y bombones pero ninguno
+ tiene las tres clases de golosinas, 4 comen solo bombones, 6 comen pastillas,
+ 5 comen solo caramelos, 2 comen pastillas y caramelos y 1 solamente como
+ pastilla.
+ Halla el detalle de cada consumo.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Standard
+COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+En una empresa se realiza una encuesta con el propósito de averiguar a través
+ de qué fuentes reciben información sus empleados.
+ Los resultados de la encuesta dieron los siguientes datos: 18 reciben sólo
+ por correo electrónico, 10 sólo por twiter, 24 sólo por twiter y facebook,
+ 43 no miran facebook, 37 sólo miran facebook y ven correos y 77 nunca twiter.
+ Todos los empleados contestaron que se informan a través de estas fuentes.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+¿Cuántos empleados se informan a través de los tres medios?
+\end_layout
+
+\begin_layout Enumerate
+¿Cuántos se informan por twiter?
+\end_layout
+
+\begin_layout Enumerate
+¿Cuántos sólo se informan por facebook?
+\end_layout
+
+\begin_layout Enumerate
+¿Cuántos no se informan por correo?
+\end_layout
+
+\begin_layout Enumerate
+¿Cuántos fueron encuestados?
+\end_layout
+
+\begin_layout Paragraph
+Soluciones
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
 \end_layout
 
 \begin_layout Enumerate
