@@ -2499,8 +2499,8 @@ Solución
 \begin_layout Itemize
 NSD: Existen múltiples formas de resolver este algoritmo, la mas evidente
  utiliza múltiples estructuras de decisión simple anidadas.
- La que muetro a continuación utiliza estructuras de decisión simple secuenciale
-s, lo cual considero mas simple.
+ La que muestro a continuación utiliza estructuras de decisión simple secuencial
+es, lo cual considero mas simple.
 \end_layout
 
 \begin_deeper
@@ -2968,9 +2968,14 @@ NSD:
 \begin_deeper
 \begin_layout Standard
 \align center
+\begin_inset space \hspace*{}
+\length -5.25cm
+\end_inset
+
+
 \begin_inset Graphics
 	filename Imagenes/ej2-8.png
-	scale 40
+	scale 33
 
 \end_inset
 
@@ -3057,17 +3062,62 @@ else:
 
 \begin_layout Plain Layout
 
-    print(
+    if L1 == L2 and L2 == L3:
+\end_layout
+
+\begin_layout Plain Layout
+
+	    print(
 \begin_inset Quotes fld
 \end_inset
 
-Es un triangulo.
+Es un triangulo equilatero.
 \begin_inset Quotes frd
 \end_inset
 
 )
 \end_layout
 
+\begin_layout Plain Layout
+
+    elif L1 == L2 or L1 == L3 or L2 == L3:
+\end_layout
+
+\begin_layout Plain Layout
+
+	    print(
+\begin_inset Quotes fld
+\end_inset
+
+Es un triangulo isoceles.
+\begin_inset Quotes frd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+    else:
+\end_layout
+
+\begin_layout Plain Layout
+
+	    print(
+\begin_inset Quotes fld
+\end_inset
+
+Es un triangulo escaleno.
+\begin_inset Quotes frd
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -3088,10 +3138,6 @@ Librerías: hasta 24 unidades, el 20%; más de 24 unidades, el 25%.
 \begin_layout Itemize
 Particulares: menos de 6 unidades, nada; desde 6 hasta 18 unidades, el 5%;
  y más de 18 unidades, el 10%.
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -3136,6 +3182,10 @@ NSD:
 	filename Imagenes/ej2-9.png
 	scale 40
 
+\end_inset
+
+
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -3190,22 +3240,6 @@ Ingrese la cantidad de unidades:
 \end_inset
 
 ))
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \begin_layout Plain Layout
@@ -3372,10 +3406,6 @@ El mayor número ingresado fue el xxx
 \end_inset
 
 .
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_deeper
@@ -3887,7 +3917,710 @@ Estructura de Iteración o repetición con cantidad conocida de veces (FOR)
 \end_layout
 
 \begin_layout Enumerate
-COMPLETAR.
+Calcular el sueldo de cada uno de los 50 operarios de una fábrica dados
+ como datos la remuneración por hora (es la misma para todos los operarios)
+ y la cantidad de horas que trabajó en el mes cada operario.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Imagenes/ej3-1.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Python:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python,fontsize={\normalsize}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+REMUNERACION = int(input("Ingrese remuneracion por hora: "))
+\end_layout
+
+\begin_layout Plain Layout
+
+for OPERARIO in range(1,5):
+\end_layout
+
+\begin_layout Plain Layout
+
+    print("Ingrese cantidad de horas operario", OPERARIO)
+\end_layout
+
+\begin_layout Plain Layout
+
+    HORAS = int(input())
+\end_layout
+
+\begin_layout Plain Layout
+
+    print("Sueldo:", HORAS * REMUNERACION)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Dados como datos 100 números enteros, mostrar cada uno de ellos indicando
+ si es 
+\begin_inset Quotes fld
+\end_inset
+
+POSITIVO
+\begin_inset Quotes frd
+\end_inset
+
+ ó 
+\begin_inset Quotes fld
+\end_inset
+
+NEGATIVO
+\begin_inset Quotes frd
+\end_inset
+
+, según corresponda.
+ 
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Imagenes/ej3-2.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Python:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python,fontsize={\normalsize}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+for DATO in range(1, 100):
+\end_layout
+
+\begin_layout Plain Layout
+
+    NUMERO = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese un numero: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+    print(
+\begin_inset Quotes fld
+\end_inset
+
+El numero
+\begin_inset Quotes frd
+\end_inset
+
+, NUMERO, 
+\begin_inset Quotes fld
+\end_inset
+
+es
+\begin_inset Quotes frd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+    if NUMERO < 0:
+\end_layout
+
+\begin_layout Plain Layout
+
+        print(
+\begin_inset Quotes fld
+\end_inset
+
+NEGATIVO
+\begin_inset Quotes frd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+    else:
+\end_layout
+
+\begin_layout Plain Layout
+
+        print(
+\begin_inset Quotes fld
+\end_inset
+
+POSITIVO
+\begin_inset Quotes frd
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Color Box
+status open
+
+\begin_layout Plain Layout
+En Python puede utilizarse una estructura de desición simple como expresión.
+ El siguiente programa es equivalente al anterior:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=Python,fontsize={\normalsize}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+for DATO in range(1, 100):
+\end_layout
+
+\begin_layout Plain Layout
+
+    NUMERO = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese un numero: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+    print(
+\begin_inset Quotes fld
+\end_inset
+
+El numero
+\begin_inset Quotes frd
+\end_inset
+
+, NUMERO, 
+\begin_inset Quotes fld
+\end_inset
+
+es
+\begin_inset Quotes frd
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Plain Layout
+
+          
+\begin_inset Quotes fld
+\end_inset
+
+NEGATIVO
+\begin_inset Quotes frd
+\end_inset
+
+ if NUMERO < 0 else 
+\begin_inset Quotes fld
+\end_inset
+
+POSITIVO
+\begin_inset Quotes frd
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Ingresando una sucesión de 300 números enteros, determinar la cantidad de
+ números.
+ positivos que hay en ella.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Imagenes/ej3-3.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Python:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python,fontsize={\normalsize}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+CONTADOR = 0
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+for I in range(1,301):
+\end_layout
+
+\begin_layout Plain Layout
+
+    NUMERO = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese un numero: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+    if NUMERO >= 0:
+\end_layout
+
+\begin_layout Plain Layout
+
+        CONTADOR += 1
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes fld
+\end_inset
+
+Se ingresaron
+\begin_inset Quotes frd
+\end_inset
+
+, CONTADOR, 
+\begin_inset Quotes fld
+\end_inset
+
+numeros positivos.
+\begin_inset Quotes frd
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Dados como datos 200 números enteros, obtener y mostrar su suma.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Imagenes/ej3-4.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Python:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python,fontsize={\normalsize}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+SUMA = 0
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+for I in range(1, 201):
+\end_layout
+
+\begin_layout Plain Layout
+
+    NUMERO = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese un numero: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+    SUMA += NUMERO
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes fld
+\end_inset
+
+La suma es:
+\begin_inset Quotes frd
+\end_inset
+
+, SUMA)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Color Box
+status open
+
+\begin_layout Plain Layout
+El mismo programa puede realizarse sin necesidad de asignar un valor a la
+ variable numero, de la siguiente manera:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=Python,fontsize={\normalsize}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+SUMA = 0
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+for I in range(1, 201):
+\end_layout
+
+\begin_layout Plain Layout
+
+    SUMA += int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese un numero: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes fld
+\end_inset
+
+La suma es:
+\begin_inset Quotes frd
+\end_inset
+
+, SUMA)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Para 1000 usuarios residenciales de energía eléctrica se cuenta con pares
+ de valores que indican, para cada medidor, el consumo de Kilowatios al
+ final del mes anterior y el consumo de Kilowatios al final del mes actual.
+ Además se tiene el precio por Kilowatio.
+ Exhibir, para cada usuario, el precio del Kilowatio, el consumo del mes
+ y el importe a abonar.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Imagenes/ej3-5.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Python:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python,fontsize={\small}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+PRECIO = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese el precio del kilowatio: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+for USUARIO in range(1,10001):
+\end_layout
+
+\begin_layout Plain Layout
+
+    ANTERIOR = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese los kilowatios al fin del mes anterior: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+    ACTUAL = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese los kilowatios al fin de mes actual: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+    print(
+\begin_inset Quotes fld
+\end_inset
+
+Consumo del mes:
+\begin_inset Quotes frd
+\end_inset
+
+, ACTUAL - ANTERIOR)
+\end_layout
+
+\begin_layout Plain Layout
+
+    print(
+\begin_inset Quotes fld
+\end_inset
+
+Importe:
+\begin_inset Quotes frd
+\end_inset
+
+, ACTUAL * PRECIO)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Sabiendo que una carrera universitaria cuenta con X cantidad de materias,
+ ingresar las notas con que un alumno aprobó cada una de las materias durante
+ su carrera universitaria y finalmente mostrar la nota promedio de dicho
+ alumno.
 \end_layout
 
 \begin_deeper
@@ -3905,7 +4638,7 @@ Python: COMPLETAR.
 
 \end_deeper
 \begin_layout Enumerate
-COMPLETAR.
+Calcular y exhibir la suma de los primeros 100 números naturales.
 \end_layout
 
 \begin_deeper
@@ -3923,7 +4656,10 @@ Python: COMPLETAR.
 
 \end_deeper
 \begin_layout Enumerate
-COMPLETAR.
+Ingresar dos números naturales.
+ Verificar si el primero es menor que el segundo.
+ En caso afirmativo mostrar todos los números comprendidos entre ellos en
+ secuencia ascendente, incluyendo los extremos.
 \end_layout
 
 \begin_deeper
@@ -3941,7 +4677,35 @@ Python: COMPLETAR.
 
 \end_deeper
 \begin_layout Enumerate
-COMPLETAR.
+Se dan como datos los importes de las 200 ventas de una librería.
+ Se desea saber:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Cuántas ventas tuvieron importes menores que $100.
+\end_layout
+
+\begin_layout Itemize
+Cuál es el monto total de las ventas cuyo importe fue igual o mayor que
+ $100.
+\end_layout
+
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Obtener la suma de los N números naturales posteriores al número 300 inclusive.
 \end_layout
 
 \begin_deeper
@@ -3959,115 +4723,9 @@ Python: COMPLETAR.
 
 \end_deeper
 \begin_layout Enumerate
-COMPLETAR.
-\end_layout
-
-\begin_deeper
-\begin_layout Paragraph
-Solución
-\end_layout
-
-\begin_layout Itemize
-NSD: COMPLETAR.
-\end_layout
-
-\begin_layout Itemize
-Python: COMPLETAR.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-COMPLETAR.
-\end_layout
-
-\begin_deeper
-\begin_layout Paragraph
-Solución
-\end_layout
-
-\begin_layout Itemize
-NSD: COMPLETAR.
-\end_layout
-
-\begin_layout Itemize
-Python: COMPLETAR.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-COMPLETAR.
-\end_layout
-
-\begin_deeper
-\begin_layout Paragraph
-Solución
-\end_layout
-
-\begin_layout Itemize
-NSD: COMPLETAR.
-\end_layout
-
-\begin_layout Itemize
-Python: COMPLETAR.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-COMPLETAR.
-\end_layout
-
-\begin_deeper
-\begin_layout Paragraph
-Solución
-\end_layout
-
-\begin_layout Itemize
-NSD: COMPLETAR.
-\end_layout
-
-\begin_layout Itemize
-Python: COMPLETAR.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-COMPLETAR.
-\end_layout
-
-\begin_deeper
-\begin_layout Paragraph
-Solución
-\end_layout
-
-\begin_layout Itemize
-NSD: COMPLETAR.
-\end_layout
-
-\begin_layout Itemize
-Python: COMPLETAR.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-COMPLETAR.
-\end_layout
-
-\begin_deeper
-\begin_layout Paragraph
-Solución
-\end_layout
-
-\begin_layout Itemize
-NSD: COMPLETAR.
-\end_layout
-
-\begin_layout Itemize
-Python: COMPLETAR.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-COMPLETAR.
+Generar e informar los primeros N múltiplos de un número M entero cualquiera.
+ N y M son dos números que se ingresan como dato.
+ 
 \end_layout
 
 \begin_deeper
