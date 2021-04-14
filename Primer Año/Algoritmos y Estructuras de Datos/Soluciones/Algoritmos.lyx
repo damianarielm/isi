@@ -4621,6 +4621,10 @@ Sabiendo que una carrera universitaria cuenta con X cantidad de materias,
  ingresar las notas con que un alumno aprobó cada una de las materias durante
  su carrera universitaria y finalmente mostrar la nota promedio de dicho
  alumno.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -4629,13 +4633,99 @@ Solución
 \end_layout
 
 \begin_layout Itemize
-NSD: COMPLETAR.
+NSD:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Imagenes/ej3-6.png
+	scale 40
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
-Python: COMPLETAR.
+Python:
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python,fontsize={\normalsize}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+SUMA = 0
+\end_layout
+
+\begin_layout Plain Layout
+
+X = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese cantidad de materias: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+for I in range(1, X + 1):
+\end_layout
+
+\begin_layout Plain Layout
+
+    NOTA = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese una nota: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+    SUMA += NOTA
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes fld
+\end_inset
+
+El promedio es:
+\begin_inset Quotes frd
+\end_inset
+
+, SUMA / X)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 Calcular y exhibir la suma de los primeros 100 números naturales.
@@ -4647,13 +4737,116 @@ Solución
 \end_layout
 
 \begin_layout Itemize
-NSD: COMPLETAR.
+NSD:
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Imagenes/ej3-7.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
-Python: COMPLETAR.
+Python:
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python,fontsize={\normalsize}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+SUMA = 0
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+for NUMERO in range(1, 101):
+\end_layout
+
+\begin_layout Plain Layout
+
+    SUMA += NUMERO
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes fld
+\end_inset
+
+La suma es:
+\begin_inset Quotes frd
+\end_inset
+
+, NUMERO)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Color Box
+status open
+
+\begin_layout Plain Layout
+La función 
+\family typewriter
+sum
+\family default
+ de Python permite hacer el mismo programa de forma mas sencilla:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=Python,fontsize={\normalsize}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes fld
+\end_inset
+
+La suma es:
+\begin_inset Quotes frd
+\end_inset
+
+, sum(range(101)))
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 Ingresar dos números naturales.
@@ -4668,13 +4861,88 @@ Solución
 \end_layout
 
 \begin_layout Itemize
-NSD: COMPLETAR.
+NSD:
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Imagenes/ej3-8.png
+	scale 40
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
-Python: COMPLETAR.
+Python:
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python,fontsize={\normalsize}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+NUMERO1 = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese el primer numero: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+NUMERO2 = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese el segundo numero: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+if NUMERO1 < NUMERO2:
+\end_layout
+
+\begin_layout Plain Layout
+
+    for NUMERO in range(NUMERO1, NUMERO2 + 1):
+\end_layout
+
+\begin_layout Plain Layout
+
+        print(NUMERO)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 Se dan como datos los importes de las 200 ventas de una librería.
@@ -4696,16 +4964,323 @@ Solución
 \end_layout
 
 \begin_layout Itemize
-NSD: COMPLETAR.
+NSD:
 \end_layout
 
-\begin_layout Itemize
-Python: COMPLETAR.
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Imagenes/ej3-9.png
+	scale 40
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \end_deeper
+\begin_layout Itemize
+Python:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python,fontsize={\normalsize}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+CONTADOR = 0
+\end_layout
+
+\begin_layout Plain Layout
+
+TOTAL    = 0
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+for I in range(1,101):
+\end_layout
+
+\begin_layout Plain Layout
+
+    IMPORTE = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese un importe: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+    if IMPORTE < 100:
+\end_layout
+
+\begin_layout Plain Layout
+
+        CONTADOR += 1
+\end_layout
+
+\begin_layout Plain Layout
+
+    else:
+\end_layout
+
+\begin_layout Plain Layout
+
+        TOTAL += IMPORTE
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes fld
+\end_inset
+
+Hubo
+\begin_inset Quotes frd
+\end_inset
+
+, CONTADOR, 
+\begin_inset Quotes fld
+\end_inset
+
+ventas menores que 100.
+\begin_inset Quotes frd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes fld
+\end_inset
+
+El total de las restantes es:
+\begin_inset Quotes frd
+\end_inset
+
+, TOTAL)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Enumerate
 Obtener la suma de los N números naturales posteriores al número 300 inclusive.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Imagenes/ej3-10.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Python:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python,fontsize={\normalsize}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+N    = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese N: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+SUMA = 0
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+for I in range(300, 300 + N + 1):
+\end_layout
+
+\begin_layout Plain Layout
+
+    SUMA += I
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes fld
+\end_inset
+
+La suma es:
+\begin_inset Quotes frd
+\end_inset
+
+, SUMA)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Generar e informar los primeros N múltiplos de un número M entero cualquiera.
+ N y M son dos números que se ingresan como dato.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Imagenes/ej3-11.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Python:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python,fontsize={\normalsize}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+N    = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese N: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+M    = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese M: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+for I in range(1, N):
+\end_layout
+
+\begin_layout Plain Layout
+
+    print(M * I)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Ingresado un número 
+\begin_inset Formula $X$
+\end_inset
+
+, calcular 
+\begin_inset Formula $X^{5}$
+\end_inset
+
+.
 \end_layout
 
 \begin_deeper
@@ -4723,8 +5298,36 @@ Python: COMPLETAR.
 
 \end_deeper
 \begin_layout Enumerate
-Generar e informar los primeros N múltiplos de un número M entero cualquiera.
- N y M son dos números que se ingresan como dato.
+Calcular y exhibir el factorial de un número cualquiera ingresado por teclado.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+15.
+\end_layout
+
+\end_inset
+
+Generar e informar los primeros 23 términos de la sucesión de Fibonacci.
+ Tener en cuenta que los dos primeros términos son iguales a uno y que los
+ restantes se obtienen como la suma de los dos anteriores.
  
 \end_layout
 
@@ -4743,7 +5346,18 @@ Python: COMPLETAR.
 
 \end_deeper
 \begin_layout Enumerate
-COMPLETAR.
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+16.
+\end_layout
+
+\end_inset
+
+Dada una lista de 93 números, determinar e informar el valor máximo y el
+ orden en el que fue ingresado.
+ 
 \end_layout
 
 \begin_deeper
@@ -4761,7 +5375,18 @@ Python: COMPLETAR.
 
 \end_deeper
 \begin_layout Enumerate
-COMPLETAR.
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+17.
+\end_layout
+
+\end_inset
+
+Incorporar al ejercicio anterior la búsqueda del valor mínimo y el orden
+ en el que fueron ingresados.
+ 
 \end_layout
 
 \begin_deeper
@@ -4779,7 +5404,20 @@ Python: COMPLETAR.
 
 \end_deeper
 \begin_layout Enumerate
-COMPLETAR.
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+18.
+\end_layout
+
+\end_inset
+
+Una escuela realiza un control sobre el estado físico de sus 304 alumnos.
+ Dispone de los números de legajos y estatura (en cms.) de cada uno de ellos.
+ Se requiere saber el promedio de estatura, así como los números de legajos
+ de los alumnos de estatura inferior a 165 cms.
+ 
 \end_layout
 
 \begin_deeper
@@ -4797,7 +5435,18 @@ Python: COMPLETAR.
 
 \end_deeper
 \begin_layout Enumerate
-COMPLETAR.
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+19.
+\end_layout
+
+\end_inset
+
+Dada una sucesión de N números enteros ordenados en forma creciente, no
+ consecutivos, hallar la máxima diferencia entre dos números sucesivos.
+ 
 \end_layout
 
 \begin_deeper
@@ -4815,7 +5464,19 @@ Python: COMPLETAR.
 
 \end_deeper
 \begin_layout Enumerate
-COMPLETAR.
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+20.
+\end_layout
+
+\end_inset
+
+Una comisión tiene 55 alumnos, de cada uno de los cuales se tienen las notas
+ de los 6 parciales que han rendido.
+ Obtener el promedio de las notas de cada uno de los alumnos.
+ 
 \end_layout
 
 \begin_deeper
@@ -4833,7 +5494,84 @@ Python: COMPLETAR.
 
 \end_deeper
 \begin_layout Enumerate
-COMPLETAR.
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+21.
+\end_layout
+
+\end_inset
+
+Se tienen los siguientes datos de los N socios de un club:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Número de socio
+\end_layout
+
+\begin_layout Itemize
+Edad
+\end_layout
+
+\begin_layout Itemize
+Sexo (F o M)
+\end_layout
+
+\begin_layout Itemize
+Importe de la cuota
+\end_layout
+
+\begin_layout Standard
+Se queire saber:
+\end_layout
+
+\begin_layout Enumerate
+Cantidad de mujeres y cantidad de hombres
+\end_layout
+
+\begin_layout Enumerate
+Promedio de edad de todos los socios
+\end_layout
+
+\begin_layout Enumerate
+Total recaudado por el club en concepto de cuotas
+\end_layout
+
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+22.
+\end_layout
+
+\end_inset
+
+Se cuenta con un texto de 190 caracteres.
+ Determinar cuantas veces aparece la sílaba 
+\begin_inset Quotes fld
+\end_inset
+
+pa
+\begin_inset Quotes frd
+\end_inset
+
+.
 \end_layout
 
 \begin_deeper
@@ -4851,100 +5589,69 @@ Python: COMPLETAR.
 
 \end_deeper
 \begin_layout Enumerate
-COMPLETAR.
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+23.
+\end_layout
+
+\end_inset
+
+Una empresa está dividida en 10 secciones.
+ Para cada una de ellas se tienen como datos: 
 \end_layout
 
 \begin_deeper
-\begin_layout Paragraph
-Solución
+\begin_layout Itemize
+Nro.
+ de sección
 \end_layout
 
 \begin_layout Itemize
-NSD: COMPLETAR.
+Cantidad de empleados que trabajan en ella
+\end_layout
+
+\begin_layout Standard
+Para cada empleado se tiene como dato:
 \end_layout
 
 \begin_layout Itemize
-Python: COMPLETAR.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-COMPLETAR.
-\end_layout
-
-\begin_deeper
-\begin_layout Paragraph
-Solución
+Cantidad de horas trabajadas
 \end_layout
 
 \begin_layout Itemize
-NSD: COMPLETAR.
+Turno de trabajo (
+\begin_inset Quotes fld
+\end_inset
+
+M
+\begin_inset Quotes frd
+\end_inset
+
+: mañana, 
+\begin_inset Quotes fld
+\end_inset
+
+T
+\begin_inset Quotes frd
+\end_inset
+
+: tarde)
+\end_layout
+
+\begin_layout Standard
+Se desea saber:
 \end_layout
 
 \begin_layout Itemize
-Python: COMPLETAR.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-COMPLETAR.
-\end_layout
-
-\begin_deeper
-\begin_layout Paragraph
-Solución
+El promedio de horas trabajadas en cada sección.
 \end_layout
 
 \begin_layout Itemize
-NSD: COMPLETAR.
+La cantidad total de horas trabajadas en cada turno de la empresa.
 \end_layout
 
-\begin_layout Itemize
-Python: COMPLETAR.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-COMPLETAR.
-\end_layout
-
-\begin_deeper
-\begin_layout Paragraph
-Solución
-\end_layout
-
-\begin_layout Itemize
-NSD: COMPLETAR.
-\end_layout
-
-\begin_layout Itemize
-Python: COMPLETAR.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-COMPLETAR.
-\end_layout
-
-\begin_deeper
-\begin_layout Paragraph
-Solución
-\end_layout
-
-\begin_layout Itemize
-NSD: COMPLETAR.
-\end_layout
-
-\begin_layout Itemize
-Python: COMPLETAR.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-COMPLETAR.
-\end_layout
-
-\begin_deeper
 \begin_layout Paragraph
 Solución
 \end_layout
