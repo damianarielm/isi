@@ -5289,13 +5289,92 @@ Solución
 \end_layout
 
 \begin_layout Itemize
-NSD: COMPLETAR.
+NSD:
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Imagenes/ej3-12.png
+	scale 40
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
-Python: COMPLETAR.
+Python:
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python,fontsize={\normalsize}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+X      = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese un numero: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+QUINTA = 1
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+for I in range(1, 6):
+\end_layout
+
+\begin_layout Plain Layout
+
+    QUINTA *= X
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes fld
+\end_inset
+
+La quinta potencia es:
+\begin_inset Quotes frd
+\end_inset
+
+, QUINTA)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 Calcular y exhibir el factorial de un número cualquiera ingresado por teclado.
@@ -5307,13 +5386,88 @@ Solución
 \end_layout
 
 \begin_layout Itemize
-NSD: COMPLETAR.
+NSD:
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Imagenes/ej3-13.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
-Python: COMPLETAR.
+Python:
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python,fontsize={\normalsize}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+X         = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese un numero: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+FACTORIAL = 1
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+for I in range(1, 6):
+\end_layout
+
+\begin_layout Plain Layout
+
+    FACTORIAL *= I
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes fld
+\end_inset
+
+El factorial es:
+\begin_inset Quotes frd
+\end_inset
+
+, FACTORIAL)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 \begin_inset Argument item:1
@@ -5337,13 +5491,83 @@ Solución
 \end_layout
 
 \begin_layout Itemize
-NSD: COMPLETAR.
+NSD:
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Imagenes/ej3-15.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
-Python: COMPLETAR.
+Python:
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python,fontsize={\normalsize}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+print(1)
+\end_layout
+
+\begin_layout Plain Layout
+
+print(1)
+\end_layout
+
+\begin_layout Plain Layout
+
+FNMENOS2 = 1
+\end_layout
+
+\begin_layout Plain Layout
+
+FNMENOS1 = 1
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+for i in range(3,24):
+\end_layout
+
+\begin_layout Plain Layout
+
+    FN = FNMENOS1 + FNMENOS2
+\end_layout
+
+\begin_layout Plain Layout
+
+    print(FN)
+\end_layout
+
+\begin_layout Plain Layout
+
+    FNMENOS2, FNMENOS1 = FNMENOS1, FN
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 \begin_inset Argument item:1
@@ -5358,6 +5582,10 @@ status open
 Dada una lista de 93 números, determinar e informar el valor máximo y el
  orden en el que fue ingresado.
  
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -5366,13 +5594,114 @@ Solución
 \end_layout
 
 \begin_layout Itemize
-NSD: COMPLETAR.
+NSD:
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Imagenes/ej3-16.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
-Python: COMPLETAR.
+Python:
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python,fontsize={\normalsize}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+MAYOR    = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese un numero: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+POSICION = 1
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+for I in range(2, 94):
+\end_layout
+
+\begin_layout Plain Layout
+
+    NUMERO = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese otro numero: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+    if NUMERO > MAYOR:
+\end_layout
+
+\begin_layout Plain Layout
+
+        MAYOR, POSICION = NUMERO, I
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes fld
+\end_inset
+
+El mayor es
+\begin_inset Quotes frd
+\end_inset
+
+, MAYOR, 
+\begin_inset Quotes fld
+\end_inset
+
+y fue ingresado
+\begin_inset Quotes frd
+\end_inset
+
+, POSICION)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 \begin_inset Argument item:1
@@ -5400,6 +5729,10 @@ NSD: COMPLETAR.
 
 \begin_layout Itemize
 Python: COMPLETAR.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -5426,13 +5759,127 @@ Solución
 \end_layout
 
 \begin_layout Itemize
-NSD: COMPLETAR.
+NSD:
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Imagenes/ej3-18.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
-Python: COMPLETAR.
+Python:
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python,fontsize={\normalsize}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+SUMA = 0
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+for I in range(1, 305):
+\end_layout
+
+\begin_layout Plain Layout
+
+    LEGAJO   = input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese legajo: 
+\begin_inset Quotes fld
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+    ESTATURA = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese estatura: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+    SUMA += ESTATURA
+\end_layout
+
+\begin_layout Plain Layout
+
+    if ESTATURA < 165:
+\end_layout
+
+\begin_layout Plain Layout
+
+        print(
+\begin_inset Quotes fld
+\end_inset
+
+Legajo
+\begin_inset Quotes frd
+\end_inset
+
+, LEGAJO, 
+\begin_inset Quotes fld
+\end_inset
+
+menor de 165cm.
+\begin_inset Quotes frd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes fld
+\end_inset
+
+El promedio de estatura es: 
+\begin_inset Quotes fld
+\end_inset
+
+, SUMA / 304)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 \begin_inset Argument item:1
@@ -5549,6 +5996,10 @@ NSD: COMPLETAR.
 
 \begin_layout Itemize
 Python: COMPLETAR.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -5580,13 +6031,172 @@ Solución
 \end_layout
 
 \begin_layout Itemize
-NSD: COMPLETAR.
+NSD:
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Imagenes/ej3-22.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
-Python: COMPLETAR.
+Python:
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python,fontsize={\normalsize}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+TEXTO    = input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese un texto: 
+\begin_inset Quotes fld
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+CONTADOR = 0
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+for I in range(len(TEXTO) - 1):
+\end_layout
+
+\begin_layout Plain Layout
+
+    if TEXTO[I] == 
+\begin_inset Quotes fld
+\end_inset
+
+p
+\begin_inset Quotes frd
+\end_inset
+
+ and TEXTO[I + 1] == 
+\begin_inset Quotes fld
+\end_inset
+
+a
+\begin_inset Quotes frd
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Plain Layout
+
+        CONTADOR += 1
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+print(CONTADOR)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Color Box
+status open
+
+\begin_layout Plain Layout
+El operador de 
+\begin_inset Quotes fld
+\end_inset
+
+slicing
+\begin_inset Quotes frd
+\end_inset
+
+ en Python, nos permite escribir la misma condición en forma mas sencilla.
+ El mismo programa quedaría así:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=Python,fontsize={\normalsize}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+TEXTO    = input("Ingrese un texto: ")
+\end_layout
+
+\begin_layout Plain Layout
+
+CONTADOR = 0
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+for I in range(len(TEXTO) - 1):
+\end_layout
+
+\begin_layout Plain Layout
+
+    if TEXTO[I:I+2] == "pa":
+\end_layout
+
+\begin_layout Plain Layout
+
+        CONTADOR += 1
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+print(CONTADOR)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 \begin_inset Argument item:1
@@ -5677,7 +6287,10 @@ Estructura de Iteración o repetición con cantidad desconocida de veces (WHILE)
 \end_layout
 
 \begin_layout Enumerate
-COMPLETAR.
+Dado un conjunto de números enteros, determinar cuántos de ellos son mayores
+ ó iguales que 100.
+ Un número igual a cero indica fin de datos.
+ 
 \end_layout
 
 \begin_deeper
@@ -5695,7 +6308,41 @@ Python: COMPLETAR.
 
 \end_deeper
 \begin_layout Enumerate
-COMPLETAR.
+Se tienen como dato los importes de todas las facturas correspondientes
+ al mes que acaba de finalizar de un comercio (no se sabe cuántas son).
+ Se desea conocer:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Cuántas ventas se realizaron
+\end_layout
+
+\begin_layout Itemize
+Importe promedio de las mismas
+\end_layout
+
+\begin_layout Itemize
+Cuántos son los importes que superan los 30 pesos
+\end_layout
+
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Se van ingresando números distintos de cero, salvo el último valor.
+ Determinar su suma.
+ 
 \end_layout
 
 \begin_deeper
@@ -5713,7 +6360,18 @@ Python: COMPLETAR.
 
 \end_deeper
 \begin_layout Enumerate
-COMPLETAR.
+Se cuenta con la información brindada por un conjunto de vendedores.
+ Por cada uno de ellos se ingresa su código (un carácter distinto de 
+\begin_inset Quotes fld
+\end_inset
+
+*
+\begin_inset Quotes frd
+\end_inset
+
+) y el importe total de sus ventas.
+ Determinar el código del vendedor con mayor importe vendido y dicho importe.
+ 
 \end_layout
 
 \begin_deeper
@@ -5731,7 +6389,15 @@ Python: COMPLETAR.
 
 \end_deeper
 \begin_layout Enumerate
-COMPLETAR.
+Se dispone de una serie de importes y para cada uno es necesario saber si
+ se aplica o no un descuento.
+ En caso afirmativo, calcular el importe del mismo.
+ El criterio es el siguiente: para importes menores o iguales que 85, no
+ se hace descuento y para importes mayores, se hace el 5 % de descuento.
+ Informar cada importe (nunca cero) con su correspondiente descuento y,
+ al final, el porcentaje que representa la cantidad de importes que tuvieron
+ descuento, con respecto a la cantidad total de importes.
+ 
 \end_layout
 
 \begin_deeper
@@ -5749,7 +6415,14 @@ Python: COMPLETAR.
 
 \end_deeper
 \begin_layout Enumerate
-COMPLETAR.
+Una empresa tiene 50 viajantes que trabajan en ella.
+ A fin de mes cada uno de los viajantes informa su número y los importes
+ de cada una de las ventas realizadas.
+ No se sabe la cantidad de ventas que realizó cada uno de ellos por lo que
+ un valor de venta igual a cero indica que no hay más ventas de ese vendedor.
+ Se pide exhibir, para cada uno de los viajantes, el Nro.
+ del viajante y el importe de la mayor venta realizada por el mismo.
+ 
 \end_layout
 
 \begin_deeper
@@ -5767,7 +6440,31 @@ Python: COMPLETAR.
 
 \end_deeper
 \begin_layout Enumerate
-COMPLETAR.
+Al finalizar cada día, los vendedores de un comercio rinden al dueño sus
+ ventas para calcular la comisión que cobrarán.
+ Los vendedores son 8, codificados de la 
+\begin_inset Quotes fld
+\end_inset
+
+A
+\begin_inset Quotes frd
+\end_inset
+
+ a la 
+\begin_inset Quotes fld
+\end_inset
+
+H
+\begin_inset Quotes frd
+\end_inset
+
+, y no se sabe cuántas ventas realizó cada uno.
+ Los datos vienen ordenados y agrupados por vendedor.
+ Por cada vendedor se ingresan cada uno de los importes de sus ventas.
+ Para indicar el fin de cada uno de ellos se ingresa un valor de venta igual
+ a 0.
+ Se solicita mostrar para cada uno de los vendedores: su código y la comisión
+ que cobrará, que es el 2,5% de la suma de sus ventas.
 \end_layout
 
 \begin_deeper
@@ -5785,7 +6482,16 @@ Python: COMPLETAR.
 
 \end_deeper
 \begin_layout Enumerate
-COMPLETAR.
+Se desea saber el total de ventas de cada uno de los vendedores de una empresa.
+ A tal fin se tienen como datos: el código de vendedor y el importe de cada
+ una de las ventas; un vendedor puede haber realizado más de una venta.
+ No se sabe la cantidad de vendedores que tiene la empresa ni la cantidad
+ de ventas hechas por cada vendedor (un código de vendedor igual a cero
+ es fin de datos).
+ ESTOS DATOS ESTAN ORDENADOS POR CODIGO DE VENDEDOR.
+ Exhibir cada código de vendedor y su total correspondiente y al final,
+ el código de vendedor con mayor importe vendido y dicho importe.
+ 
 \end_layout
 
 \begin_deeper
@@ -5803,25 +6509,17 @@ Python: COMPLETAR.
 
 \end_deeper
 \begin_layout Enumerate
-COMPLETAR.
-\end_layout
+Ingresar una secuencia ordenada alfabéticamente de letras con repeticiones.
+ Informar cada carácter y la cantidad de veces que aparece en la lista.
+ La secuencia finaliza con un 
+\begin_inset Quotes fld
+\end_inset
 
-\begin_deeper
-\begin_layout Paragraph
-Solución
-\end_layout
+*
+\begin_inset Quotes frd
+\end_inset
 
-\begin_layout Itemize
-NSD: COMPLETAR.
-\end_layout
-
-\begin_layout Itemize
-Python: COMPLETAR.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-COMPLETAR.
+.
 \end_layout
 
 \begin_deeper
