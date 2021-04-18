@@ -3541,5 +3541,659 @@ Puesto que para cualquier numero
 \end_layout
 
 \end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+9.
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Expresar las siguientes distancias en términos de valor absoluto:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Multiple Columns
+status open
+
+\begin_layout Enumerate
+\begin_inset Formula $d\left(x,3\right)=8$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $d\left(x,0\right)>5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $d\left(z,3\right)=\left(z,-5\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $d\left(t,2\right)<d\left(t,4\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Determinar los conjuntos de reales que verifican las condiciones del ítem
+ anterior.
+\end_layout
+
+\begin_layout Paragraph
+Soluciones
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Multiple Columns
+status open
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|x-3\right|=8$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|x\right|>5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|z-3\right|=\left|z+5\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|t-2\right|<\left|t-4\right|$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Multiple Columns
+status open
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ -5,11\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(-\infty,-5\right)\cup\left(5,\infty\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+10.
+\end_layout
+
+\end_inset
+
+ Resolver de dos modos diferentes:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Multiple Columns
+status open
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|x-2\right|\geq3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|x-2\right|>3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|x-1\right|-\left|x+3\right|>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|2x-4\right|\leq8$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $2<\left|x-2\right|<5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|x-3\right|=\left|x+4\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|x\right|\leq\left|x+4\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|-3+5\right|>2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Soluciones
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Multiple Columns
+status open
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+11.
+\end_layout
+
+\end_inset
+
+ Dados los siguientes subconjuntos de números reales, clasificarlos en acotados
+ y no acotados.
+ Determinar si admiten o no valores mínimos y/o máximos.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Multiple Columns
+status open
+
+\begin_layout Enumerate
+\begin_inset Formula $A=\left[-2,5\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $B=\left\{ x\in\mathbb{R}/x\leq2\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $C_{1}=\left\{ x\in\mathbb{R}/\left|x\right|<2\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $C_{2}=\left\{ x\in\mathbb{R}/\left|x-2\right|>3\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $C_{i}\cup\left\{ -2,2\right\} $
+\end_inset
+
+ con 
+\begin_inset Formula $i=1,2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $D=\left\{ x\in\mathbb{R}/-x\geq3\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $E=\left\{ x\in\mathbb{R}/-2x+1<5\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $F=\left\{ x\in\mathbb{R}/1<-3x\leq9\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $G=\left\{ x\in\mathbb{R}/\left|-x\right|\geq3\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A\cap B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathbb{R}_{0}^{+}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathbb{R}_{0}^{+}\cup A$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Soluciones
+\end_layout
+
+\begin_layout Enumerate
+El conjunto está acotado inferiormente por 
+\begin_inset Formula $-2$
+\end_inset
+
+ y superiormente por 
+\begin_inset Formula $5$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\min\left(A\right)=-2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+El conjunto está acotado superiormente por 
+\begin_inset Formula $2$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\max\left(B\right)=2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+El conjunto está acotado inferiormente por 
+\begin_inset Formula $-2$
+\end_inset
+
+ y superiormente por 
+\begin_inset Formula $2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+El conjunto no está acotado.
+\end_layout
+
+\begin_layout Enumerate
+El conjunto 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ está acotado inferiormente por 
+\begin_inset Formula $-2$
+\end_inset
+
+ y superiormente por 
+\begin_inset Formula $2$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\min\left(C_{1}\right)=-2$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\max\left(C_{1}\right)=2$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+El conjunto 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+ no está acotado.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+El conjunto está acotado superiormente por 
+\begin_inset Formula $3$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\max\left(D\right)=3$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+12.
+\end_layout
+
+\end_inset
+
+ Siendo 
+\begin_inset Formula $A=\left\{ x\in\mathbb{R}/\left|x-2\right|\leq3\right\} $
+\end_inset
+
+ y 
+\begin_inset Formula $B=\left\{ x\in\mathbb{R}/d\left(x,0\right)<2\right\} $
+\end_inset
+
+ determinar si son verdaderas o falsas las siguientes afirmaciones, justificando
+ su respuesta.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $A\cap B$
+\end_inset
+
+ admite valor máximo en 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Existe un irracional 
+\begin_inset Formula $\alpha\in B$
+\end_inset
+
+ que verifica la inecuación 
+\begin_inset Formula $-2x+3<2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A-B$
+\end_inset
+
+ es un intervalo cerrado.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A\cup B\cup\left[-5,2\right]$
+\end_inset
+
+ es un intervalo simétrico.
+\end_layout
+
+\begin_layout Paragraph
+Soluciones
+\end_layout
+
+\begin_layout Standard
+Observemos que:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $A=\left[-1,5\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $B=\left(-2,2\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\color red
+Falso
+\color inherit
+: El conjunto 
+\begin_inset Formula $A\cap B=\left[-1,2\right)$
+\end_inset
+
+ no tiene elemento máximo.
+\end_layout
+
+\begin_layout Enumerate
+
+\color green
+Verdadero
+\color inherit
+: 
+\begin_inset Formula $-2x+3<2\iff-2x<-1\iff x>\frac{1}{2}$
+\end_inset
+
+, en particular para 
+\begin_inset Formula $\alpha=\sqrt{2}$
+\end_inset
+
+ se cumplen las condiciones requeridas.
+\end_layout
+
+\begin_layout Enumerate
+
+\color red
+Falso
+\color inherit
+: 
+\begin_inset Formula $A-B=\left(2,5\right]$
+\end_inset
+
+ no es un intervalo cerrado
+\end_layout
+
+\begin_layout Enumerate
+
+\color green
+Verdadero
+\color inherit
+: 
+\begin_inset Formula $A\cup B\cup\left[-5,2\right]=\left[-5,5\right]$
+\end_inset
+
+ es efectivamente un intervalo simétrico.
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
