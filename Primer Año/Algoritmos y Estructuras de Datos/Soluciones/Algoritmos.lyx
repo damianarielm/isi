@@ -6299,13 +6299,101 @@ Solución
 \end_layout
 
 \begin_layout Itemize
-NSD: COMPLETAR.
+NSD: 
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Imagenes/ej4-1.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
-Python: COMPLETAR.
+Python:
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python,fontsize={\normalsize}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+MAYORES, NUMERO = 0, 1
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+while NUMERO != 0:
+\end_layout
+
+\begin_layout Plain Layout
+
+    NUMERO = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese un numero: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+    if NUMERO >= 100:
+\end_layout
+
+\begin_layout Plain Layout
+
+        MAYORES += 1
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes fld
+\end_inset
+
+Hubo
+\begin_inset Quotes frd
+\end_inset
+
+, MAYORES, 
+\begin_inset Quotes fld
+\end_inset
+
+numeros mayores o iguales a 100.
+\begin_inset Quotes frd
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 Se tienen como dato los importes de todas las facturas correspondientes
@@ -6331,13 +6419,150 @@ Solución
 \end_layout
 
 \begin_layout Itemize
-NSD: COMPLETAR.
+NSD:
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Imagenes/ej4-2.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
-Python: COMPLETAR.
+Python:
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python,fontsize={\normalsize}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+MAYORES, VENTAS, PROMEDIO, VENTA = 0, 0, 0, 1
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+while VENTA != 0:
+\end_layout
+
+\begin_layout Plain Layout
+
+    VENTA = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese una venta: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+    if VENTA != 0:
+\end_layout
+
+\begin_layout Plain Layout
+
+        PROMEDIO += VENTA
+\end_layout
+
+\begin_layout Plain Layout
+
+        VENTAS += 1
+\end_layout
+
+\begin_layout Plain Layout
+
+    if VENTA >= 30:
+\end_layout
+
+\begin_layout Plain Layout
+
+        MAYORES += 1
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes fld
+\end_inset
+
+Hubo
+\begin_inset Quotes frd
+\end_inset
+
+, VENTAS, 
+\begin_inset Quotes fld
+\end_inset
+
+ventas.
+\begin_inset Quotes frd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes fld
+\end_inset
+
+El promedio fue:
+\begin_inset Quotes frd
+\end_inset
+
+, PROMEDIO / VENTAS)
+\end_layout
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes fld
+\end_inset
+
+Hubo
+\begin_inset Quotes frd
+\end_inset
+
+, MAYORES, 
+\begin_inset Quotes fld
+\end_inset
+
+ventas mayores a 30.
+\begin_inset Quotes frd
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 Se van ingresando números distintos de cero, salvo el último valor.
@@ -6351,13 +6576,88 @@ Solución
 \end_layout
 
 \begin_layout Itemize
-NSD: COMPLETAR.
+NSD:
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Imagenes/ej4-3.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
-Python: COMPLETAR.
+Python:
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python,fontsize={\normalsize}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+NUMERO, SUMA = 0, 1
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+while NUMERO != 0:
+\end_layout
+
+\begin_layout Plain Layout
+
+    NUMERO = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese un numero: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+    SUMA += NUMERO
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes fld
+\end_inset
+
+La suma es:
+\begin_inset Quotes frd
+\end_inset
+
+, NUMERO)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 Se cuenta con la información brindada por un conjunto de vendedores.
@@ -6371,7 +6671,10 @@ Se cuenta con la información brindada por un conjunto de vendedores.
 
 ) y el importe total de sus ventas.
  Determinar el código del vendedor con mayor importe vendido y dicho importe.
- 
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -6380,27 +6683,163 @@ Solución
 \end_layout
 
 \begin_layout Itemize
-NSD: COMPLETAR.
+NSD:
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Imagenes/ej4-4.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
-Python: COMPLETAR.
+Python:
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python,fontsize={\normalsize}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+CODIGO, TOTALMAYOR = 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset Quotes frd
+\end_inset
+
+, 0
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+while CODIGO != 
+\begin_inset Quotes fld
+\end_inset
+
+*
+\begin_inset Quotes frd
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Plain Layout
+
+    CODIGO = input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese el codigo de vendedor: 
+\begin_inset Quotes fld
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+    if CODIGO != 
+\begin_inset Quotes fld
+\end_inset
+
+*
+\begin_inset Quotes frd
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Plain Layout
+
+        TOTAL = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese el total vendido: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+        if TOTAL > TOTALMAYOR:
+\end_layout
+
+\begin_layout Plain Layout
+
+            CODIGOMAYOR, TOTALMAYOR = CODIGO, TOTAL
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes fld
+\end_inset
+
+El mejor vendedor fue
+\begin_inset Quotes frd
+\end_inset
+
+, CODIGOMAYOR, 
+\begin_inset Quotes fld
+\end_inset
+
+con
+\begin_inset Quotes frd
+\end_inset
+
+, TOTALMAYOR)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 Se dispone de una serie de importes y para cada uno es necesario saber si
  se aplica o no un descuento.
  En caso afirmativo, calcular el importe del mismo.
- El criterio es el siguiente: para importes menores o iguales que 85, no
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+El criterio es el siguiente: para importes menores o iguales que 85, no
  se hace descuento y para importes mayores, se hace el 5 % de descuento.
- Informar cada importe (nunca cero) con su correspondiente descuento y,
- al final, el porcentaje que representa la cantidad de importes que tuvieron
+\end_layout
+
+\begin_layout Standard
+Informar cada importe (nunca cero) con su correspondiente descuento y, al
+ final, el porcentaje que representa la cantidad de importes que tuvieron
  descuento, con respecto a la cantidad total de importes.
  
 \end_layout
 
-\begin_deeper
 \begin_layout Paragraph
 Solución
 \end_layout
@@ -6537,10 +6976,19 @@ Python: COMPLETAR.
 
 \end_deeper
 \begin_layout Enumerate
-COMPLETAR.
+De cada uno de los alumnos de primer año de la facultad se tienen los siguientes
+ datos: Nº de comisión y nota del parcial.
 \end_layout
 
 \begin_deeper
+\begin_layout Standard
+No se sabe la cantidad de comisiones ni la cantidad de alumnos por comisión.
+ Los datos están ordenados por comisión.
+ Determinar, para cada una de las comisiones, el número de comisión y el
+ promedio de las notas de dicho parcial.
+ 
+\end_layout
+
 \begin_layout Paragraph
 Solución
 \end_layout
@@ -6555,10 +7003,26 @@ Python: COMPLETAR.
 
 \end_deeper
 \begin_layout Enumerate
-COMPLETAR.
+Del reloj de marcación del personal de una empresa se tienen los siguientes
+ datos: día, DNI y cantidad de horas trabajadas.
+ Se desea conocer:
 \end_layout
 
 \begin_deeper
+\begin_layout Itemize
+Por día, quien trabajó la mayor cantidad de horas y el promedio de horas
+ trabajadas.
+\end_layout
+
+\begin_layout Itemize
+La cantidad total de horas trabajadas.
+\end_layout
+
+\begin_layout Standard
+Los datos vienen ordenados por día y la carga de datos termina al ingresar
+ el día en 0.
+\end_layout
+
 \begin_layout Paragraph
 Solución
 \end_layout
@@ -6573,10 +7037,24 @@ Python: COMPLETAR.
 
 \end_deeper
 \begin_layout Enumerate
-COMPLETAR.
+Una empresa de alquiler de autos, los clasifica en categorías (20 categorías
+ numéricas en total).
+ Se tiene una planilla donde se encuentran, ordenados por categoría, de
+ cada viaje realizado por cada auto: la categoría, el kilometraje recorrido
+ y el monto del viaje.
+ Se pide:
 \end_layout
 
 \begin_deeper
+\begin_layout Itemize
+Obtener el total de kilómetros recorridos por cada categoría.
+\end_layout
+
+\begin_layout Itemize
+La categoría que haya realizado el viaje de mayor monto.
+ 
+\end_layout
+
 \begin_layout Paragraph
 Solución
 \end_layout
@@ -6603,7 +7081,262 @@ Estructura de Iteración o repetición con cantidad desconocida de veces (REPEAT
 \end_layout
 
 \begin_layout Enumerate
-COMPLETAR.
+Determinar cuántos caracteres tiene un conjunto de elementos, sabiendo que
+ el último carácter perteneciente al conjunto es una 
+\begin_inset Quotes fld
+\end_inset
+
+S
+\begin_inset Quotes frd
+\end_inset
+
+, y que ésta letra aparece sólo una vez.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Imagenes/ej5-1.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Python:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python,fontsize={\normalsize}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+TOTAL, C = 0, 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+while C != 
+\begin_inset Quotes fld
+\end_inset
+
+S
+\begin_inset Quotes frd
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Plain Layout
+
+    C = input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese un caracter: 
+\begin_inset Quotes fld
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+    TOTAL += 1
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes fld
+\end_inset
+
+El conjunto tiene
+\begin_inset Quotes frd
+\end_inset
+
+, TOTAL, 
+\begin_inset Quotes fld
+\end_inset
+
+caracteres
+\begin_inset Quotes frd
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Color Box
+status open
+
+\begin_layout Plain Layout
+La estructura de control de flujo Repeat no existe en Python.
+ Puede simularse de la siguiente manera:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset listings
+lstparams "language=Python,fontsize={\normalsize}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+TOTAL = 0
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+while True:
+\end_layout
+
+\begin_layout Plain Layout
+
+    C = input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese un caracter: 
+\begin_inset Quotes fld
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+    TOTAL += 1
+\end_layout
+
+\begin_layout Plain Layout
+
+    if C == 
+\begin_inset Quotes fld
+\end_inset
+
+S
+\begin_inset Quotes frd
+\end_inset
+
+: break # Condicion de corte
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes fld
+\end_inset
+
+El conjunto tiene
+\begin_inset Quotes frd
+\end_inset
+
+, TOTAL, 
+\begin_inset Quotes fld
+\end_inset
+
+caracteres
+\begin_inset Quotes frd
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Sin embargo debe evitarse siempre que se pueda utilizar True como condición,
+ o utilizar break; razón por la cual es preferible escribirlo con el enfoque
+ anterior.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Se dispone de una planilla con los sueldos a pagar a los empleados de una
+ empresa.
+ Se desea conocer cuál es el sueldo promedio que se debe abonar.
+ Como no se conoce la cantidad de empleados, luego de ingresar cada sueldo
+ deberá aparecer en la pantalla el siguiente cartel: 
+\begin_inset Quotes fld
+\end_inset
+
+¿Continúa o finaliza? (C-F)
+\begin_inset Quotes frd
+\end_inset
+
+; el operador entonces deberá ingresar un 
+\begin_inset Quotes fld
+\end_inset
+
+C
+\begin_inset Quotes frd
+\end_inset
+
+ o una 
+\begin_inset Quotes fld
+\end_inset
+
+F
+\begin_inset Quotes frd
+\end_inset
+
+, según quiera continuar ingresando datos o no.
 \end_layout
 
 \begin_deeper
@@ -6621,7 +7354,15 @@ Python: COMPLETAR.
 
 \end_deeper
 \begin_layout Enumerate
-COMPLETAR.
+Evaluar y tabular la función 
+\begin_inset Formula $f\left(x\right)=3x+2$
+\end_inset
+
+ para diferentes valores de 
+\begin_inset Formula $x$
+\end_inset
+
+.
 \end_layout
 
 \begin_deeper
@@ -6639,7 +7380,9 @@ Python: COMPLETAR.
 
 \end_deeper
 \begin_layout Enumerate
-COMPLETAR.
+Realizar un proceso que confeccione una factura de compra, ingresando el
+ código de artículo, la cantidad comprada del mismo y su precio unitario.
+ Proponer fin de datos.
 \end_layout
 
 \begin_deeper
@@ -6657,7 +7400,9 @@ Python: COMPLETAR.
 
 \end_deeper
 \begin_layout Enumerate
-COMPLETAR.
+Se tiene una cadena de 350 caracteres, se desea encontrar el primer punto
+ y coma (;) y el lugar que ocupa en la cadena.
+ En caso de no encontrar ninguna, aclarar mediante un cartel.
 \end_layout
 
 \begin_deeper
@@ -6675,7 +7420,8 @@ Python: COMPLETAR.
 
 \end_deeper
 \begin_layout Enumerate
-COMPLETAR.
+Dada una sucesión de N (cantidad) números enteros, indicar la posición del
+ primer negativo, en caso de no encontrar ninguno, exhibir cartel aclaratorio.
 \end_layout
 
 \begin_deeper
@@ -6693,10 +7439,30 @@ Python: COMPLETAR.
 
 \end_deeper
 \begin_layout Enumerate
-COMPLETAR.
+Dada una lista de espera de pasajeros de un micro, donde se indica el peso
+ del equipaje de cada uno de ellos, deberá determinarse cuántas personas
+ viajarán en el mismo de acuerdo a las siguientes condiciones:
 \end_layout
 
 \begin_deeper
+\begin_layout Itemize
+El peso del equipaje total no debe superar los 3500 kgs.
+\end_layout
+
+\begin_layout Itemize
+No se permiten pasajeros de pie.
+\end_layout
+
+\begin_layout Standard
+Para lo cual se tiene además los siguientes datos del micro: número del
+ mismo y cantidad de asientos.
+\end_layout
+
+\begin_layout Standard
+Exhibir el número del micro y la cantidad de pasajeros.
+ Indicar además si el micro va completo.
+\end_layout
+
 \begin_layout Paragraph
 Solución
 \end_layout
@@ -6711,25 +7477,8 @@ Python: COMPLETAR.
 
 \end_deeper
 \begin_layout Enumerate
-COMPLETAR.
-\end_layout
-
-\begin_deeper
-\begin_layout Paragraph
-Solución
-\end_layout
-
-\begin_layout Itemize
-NSD: COMPLETAR.
-\end_layout
-
-\begin_layout Itemize
-Python: COMPLETAR.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-COMPLETAR.
+Informar si los valores de un conjunto de N (validar que N sea mayor ó igual
+ que 2) números están ordenados de mayor a menor.
 \end_layout
 
 \begin_deeper
@@ -6794,7 +7543,379 @@ Estructura de Selección Múltiple (CASE)
 \end_layout
 
 \begin_layout Enumerate
-COMPLETAR.
+Se dispone del conjunto de facturas emitidas por un restaurante.
+ De cada factura se tienen los siguientes datos:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Nro.
+ de factura (nro entero cualquiera)
+\end_layout
+
+\begin_layout Itemize
+Nro.
+ de mozo que atendió (1..5)
+\end_layout
+
+\begin_layout Itemize
+Importe
+\end_layout
+
+\begin_layout Standard
+Las facturas están desordenadas y no se sabe cuántas son.
+ Se desea saber la comisión que se deberá pagar a cada uno de los 5 mozos.
+ Cada uno de ellos recibe el 5% del importe total que facturó.
+ Con número de factura igual a 0 se indica fin de datos.
+\end_layout
+
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset space \hspace*{}
+\length -3cm
+\end_inset
+
+
+\begin_inset Graphics
+	filename Imagenes/ej6-1.png
+	scale 33
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Python:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python,fontsize={\normalsize}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+MOZO1 = MOZO2 = MOZO3 = MOZO4 = MOZO5 = 0
+\end_layout
+
+\begin_layout Plain Layout
+
+FACTURA = 1
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+while FACTURA != 0:
+\end_layout
+
+\begin_layout Plain Layout
+
+    FACTURA = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese numero de factura: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+    if FACTURA != 0:
+\end_layout
+
+\begin_layout Plain Layout
+
+        MOZO = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese numero de mozo: 
+\begin_inset Quotes fld
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+        IMPORTE = int(input(
+\begin_inset Quotes fld
+\end_inset
+
+Ingrese importe: 
+\begin_inset Quotes frd
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+        if MOZO == 1:
+\end_layout
+
+\begin_layout Plain Layout
+
+            MOZO1 += IMPORTE
+\end_layout
+
+\begin_layout Plain Layout
+
+        elif MOZO == 2:
+\end_layout
+
+\begin_layout Plain Layout
+
+            MOZO2 += IMPORTE
+\end_layout
+
+\begin_layout Plain Layout
+
+        elif MOZO == 3:
+\end_layout
+
+\begin_layout Plain Layout
+
+            MOZO3 += IMPORTE
+\end_layout
+
+\begin_layout Plain Layout
+
+        elif MOZO == 4:
+\end_layout
+
+\begin_layout Plain Layout
+
+            MOZO4 += IMPORTE
+\end_layout
+
+\begin_layout Plain Layout
+
+        else:
+\end_layout
+
+\begin_layout Plain Layout
+
+            MOZO5 += IMPORTE
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes fld
+\end_inset
+
+Se debe pagar
+\begin_inset Quotes frd
+\end_inset
+
+, MOZO1 * 5 / 100, 
+\begin_inset Quotes fld
+\end_inset
+
+al mozo 1
+\begin_inset Quotes frd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes fld
+\end_inset
+
+Se debe pagar
+\begin_inset Quotes frd
+\end_inset
+
+, MOZO2 * 5 / 100, 
+\begin_inset Quotes fld
+\end_inset
+
+al mozo 2
+\begin_inset Quotes frd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes fld
+\end_inset
+
+Se debe pagar
+\begin_inset Quotes frd
+\end_inset
+
+, MOZO3 * 5 / 100, 
+\begin_inset Quotes fld
+\end_inset
+
+al mozo 3
+\begin_inset Quotes frd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes fld
+\end_inset
+
+Se debe pagar
+\begin_inset Quotes frd
+\end_inset
+
+, MOZO4 * 5 / 100, 
+\begin_inset Quotes fld
+\end_inset
+
+al mozo 4
+\begin_inset Quotes frd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes fld
+\end_inset
+
+Se debe pagar
+\begin_inset Quotes frd
+\end_inset
+
+, MOZO5 * 5 / 100, 
+\begin_inset Quotes fld
+\end_inset
+
+al mozo 5
+\begin_inset Quotes frd
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Se dispone de un conjunto de boletas (desordenadas) con el número de identificac
+ión de un vendedor y un importe correspondiente a una venta.
+ Los números de vendedores son: 1, 2, 3 y 4.
+ Emitir un listado con el número de vendedor y su total acumulado.
+ Con número de vendedor igual a 0 se indica fin de datos.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Se tienen como datos los importes de las ventas de cada una de las sucursales
+ de una empresa, junto con el código de sucursal (1, 2, 3, 4 ó 5).- Cada
+ sucursal puede tener varias ventas.
+ Los datos no están ordenados por código de sucursal.
+ Un código igual a cero indica fin de datos.- Obtener el total de ventas
+ para cada sucursal.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Itemize
+NSD: COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+Python: COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Ingresar N ternas formadas por dos números (distintos de cero) y un carácter
+ que corresponde al código de la operación a efectuar entre ellos (
+\begin_inset Quotes fld
+\end_inset
+
++
+\begin_inset Quotes frd
+\end_inset
+
+; 
+\begin_inset Quotes fld
+\end_inset
+
+-
+\begin_inset Quotes frd
+\end_inset
+
+; 
+\begin_inset Quotes fld
+\end_inset
+
+*
+\begin_inset Quotes frd
+\end_inset
+
+; 
+\begin_inset Quotes fld
+\end_inset
+
+/
+\begin_inset Quotes frd
+\end_inset
+
+).
+ Informar el resultado de cada expresión.
 \end_layout
 
 \begin_deeper
@@ -6848,76 +7969,336 @@ Python: COMPLETAR.
 
 \end_deeper
 \begin_layout Enumerate
-COMPLETAR.
+Se desea realizar un proceso iterativo que resuelva el siguiente Menú de
+ Opciones invocando a procedimientos: 
 \end_layout
 
 \begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0pt">
+<column alignment="left" valignment="top" width="0pt">
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Menú de opciones
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Suma de dos números
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cuadrado de un número
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Producto de dos números
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Seno de un ángulo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fin de proceso
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Paragraph
 Solución
 \end_layout
 
 \begin_layout Itemize
-NSD: COMPLETAR.
+NSD:
 \end_layout
 
-\begin_layout Itemize
-Python: COMPLETAR.
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset space \hspace*{}
+\length -5.5cm
+\end_inset
+
+
+\begin_inset Graphics
+	filename Imagenes/ej6-7.png
+	scale 26
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
-\begin_layout Enumerate
-COMPLETAR.
+\begin_layout Itemize
+Python:
 \end_layout
 
 \begin_deeper
-\begin_layout Paragraph
-Solución
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python,fontsize={\normalsize}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+from math import sin
 \end_layout
 
-\begin_layout Itemize
-NSD: COMPLETAR.
+\begin_layout Plain Layout
+
 \end_layout
 
-\begin_layout Itemize
-Python: COMPLETAR.
+\begin_layout Plain Layout
+
+OP = 1
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+while OP != 0:
+\end_layout
+
+\begin_layout Plain Layout
+
+    print("Menu de opciones")
+\end_layout
+
+\begin_layout Plain Layout
+
+    print("1 - Suma")
+\end_layout
+
+\begin_layout Plain Layout
+
+    print("2 - Cuadrado")
+\end_layout
+
+\begin_layout Plain Layout
+
+    print("3 - Producto")
+\end_layout
+
+\begin_layout Plain Layout
+
+    print("4 - Seno")
+\end_layout
+
+\begin_layout Plain Layout
+
+    print("0 - Salir")
+\end_layout
+
+\begin_layout Plain Layout
+
+    OP = int(input("Ingrese una opcion: "))
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    if OP == 1:
+\end_layout
+
+\begin_layout Plain Layout
+
+        NUMERO1 = int(input("Ingrese un numero: "))
+\end_layout
+
+\begin_layout Plain Layout
+
+        NUMERO2 = int(input("Ingrese otro numero: "))
+\end_layout
+
+\begin_layout Plain Layout
+
+        print("La suma es:", NUMERO1 + NUMERO2)
+\end_layout
+
+\begin_layout Plain Layout
+
+    elif OP == 2:
+\end_layout
+
+\begin_layout Plain Layout
+
+        NUMERO1 = int(input("Ingrese un numero: "))
+\end_layout
+
+\begin_layout Plain Layout
+
+        print("El cuadrado es:", NUMERO1 * NUMERO1)
+\end_layout
+
+\begin_layout Plain Layout
+
+    elif OP == 3:
+\end_layout
+
+\begin_layout Plain Layout
+
+        NUMERO1 = int(input("Ingrese un numero: "))
+\end_layout
+
+\begin_layout Plain Layout
+
+        NUMERO2 = int(input("Ingrese otro numero: "))
+\end_layout
+
+\begin_layout Plain Layout
+
+        print("El producto es:", NUMERO1 * NUMERO2)
+\end_layout
+
+\begin_layout Plain Layout
+
+    elif OP == 4:
+\end_layout
+
+\begin_layout Plain Layout
+
+        NUMERO1 = int(input("Ingrese un angulo en radianes: "))
+\end_layout
+
+\begin_layout Plain Layout
+
+        print("El seno es:", sin(NUMERO1))
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Color Box
+status open
+
+\begin_layout Plain Layout
+Vale la pena notar que la función seno no forma parte de la libreria base
+ de Python.
+ Para poder utilizarla hay que importarla tal como puede observarse en el
+ código.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
-\begin_layout Enumerate
-COMPLETAR.
-\end_layout
-
-\begin_deeper
-\begin_layout Paragraph
-Solución
-\end_layout
-
-\begin_layout Itemize
-NSD: COMPLETAR.
-\end_layout
-
-\begin_layout Itemize
-Python: COMPLETAR.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-COMPLETAR.
-\end_layout
-
-\begin_deeper
-\begin_layout Paragraph
-Solución
-\end_layout
-
-\begin_layout Itemize
-NSD: COMPLETAR.
-\end_layout
-
-\begin_layout Itemize
-Python: COMPLETAR.
-\end_layout
-
 \end_deeper
 \end_body
 \end_document
