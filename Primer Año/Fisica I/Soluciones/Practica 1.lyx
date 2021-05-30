@@ -1,0 +1,1575 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{pgfplots}
+\usetikzlibrary{arrows}
+\pgfplotsset{compat=1.17}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style french
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Enumerate
+Calcule las componentes cartesianas de un vector que tiene un módulo de
+ 5 unidades y que forma un ángulo de 
+\begin_inset Formula $53,13^{\circ}$
+\end_inset
+
+ con el eje de abscisas.
+ Represente gráficamente el vector.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Preview
+
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+begin{axis}[xmin = 0, xmax = 4.5, ymin = 0, ymax = 4.5,
+\end_layout
+
+\begin_layout Plain Layout
+
+                 axis lines = middle, axis equal]
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+draw[->] (1, 0) arc (0:45:1.2);
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+node at (20:1.8) {$53,13^{
+\backslash
+circ}$};
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+draw[dashed, gray] (3, 0) -- (3, 4);
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+draw[dashed, gray] (0, 4) -- (3, 4);
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+draw[->] (0, 0) -- (53.13:5);
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+end{axis}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\sin\left(53,13^{\circ}\right)=\cfrac{op}{5}\iff op=5\cdot\sin\left(53,13^{\circ}\right)\approx4$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\cos\left(53,13^{\circ}\right)=\cfrac{ad}{5}\iff ad=5\cdot\cos\left(53,13^{\circ}\right)\approx3$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Determine el ángulo 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ que forman los siguientes vectores con el eje x (positivo), medido en sentido
+ antihorario.
+ Represente gráficamente los vectores.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left(2,-1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(2,1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(-2,1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(-2,-1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Soluciones
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Preview
+
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+begin{axis}[xmin = -2.5, xmax = 2.5, ymin = -2.5, ymax = 2.5,
+\end_layout
+
+\begin_layout Plain Layout
+
+                 axis lines = middle, axis equal,
+\end_layout
+
+\begin_layout Plain Layout
+
+                 tick label style = {font = 
+\backslash
+tiny}]
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+draw[->] (0, 0) -- (2, -1) node [below] {$A$};
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+draw[->] (0, 0) -- (2, 1)  node [above] {$B$};
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+draw[->] (0, 0) -- (-2, 1)  node [above] {$C$};
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+draw[->] (0, 0) -- (-2, -1)  node [below] {$D$};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+draw[->] (0, -1) node [above right] {$
+\backslash
+alpha$} arc (270:333.435:1);
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+draw[->] (1, 0) arc (0:26.565:1) node [below left] {$
+\backslash
+beta$};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+end{axis}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\tan\left(\alpha\right)=\cfrac{2}{1}\iff\alpha=\arctan\left(2\right)\approx63,435^{\circ}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\angle\approx270^{\circ}+63,435^{\circ}\approx333,435^{\circ}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\tan\left(\beta\right)=\cfrac{1}{2}\iff\alpha=\arctan\left(\cfrac{1}{2}\right)\approx26.565^{\circ}\approx\angle$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\angle=180^{\circ}-\beta\approx153,435^{\circ}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\angle=180^{\circ}+\beta\approx206,565^{\circ}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Use un dibujo a escala para obtener las componentes cartesianas de los vectores
+ siguientes.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left(9,3;60^{\circ}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(22,3;135^{\circ}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(6,3;307^{\circ}\right)$
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Soluciones
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Preview
+
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+begin{axis}[xmin = -17, xmax = 6, ymin = -6, ymax = 17,
+\end_layout
+
+\begin_layout Plain Layout
+
+                 axis lines = middle, axis equal]
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+draw[->] (0, 0) -- (60:9.3) node [right] {$A$};
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+draw[->] (0, 0) -- (135:22) node [left] {$B$};
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+draw[->] (0, 0) -- (307:6.3) node [right] {$C$};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+draw[dashed, gray] (4.65, 0) -- (4.65, 8.05);
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+draw[dashed, gray] (0, 8.05) -- (4.65, 8.05);
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+draw[dashed, gray] (-15.56, 0) -- (-15.56, 15.56);
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+draw[dashed, gray] (0, 15.56) -- (-15.56, 15.56);
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+draw[dashed, gray] (3.79, 0) -- (3.79, -5.03);
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+draw[dashed, gray] (0, -5.03) -- (3.79, -5.03);
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+end{axis}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Resuelva el problema anterior calculando las componentes cartesianas de
+ los vectores a partir de las funciones trigonométricas seno y coseno.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Soluciones
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\sin\left(60^{\circ}\right)=\cfrac{op}{9,3}\iff op=9,3\cdot\sin\left(60^{\circ}\right)\approx8,05$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\cos\left(60^{\circ}\right)=\cfrac{ad}{9,3}\iff ad=9,3\cdot\cos\left(60^{\circ}\right)=4,65$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Calcule las componentes cartesianas de los vectores de la figura.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Preview
+
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+begin{axis}[xmin = -5, xmax = 11, ymin = -11, ymax = 11,
+\end_layout
+
+\begin_layout Plain Layout
+
+                 axis lines = middle, axis equal,
+\end_layout
+
+\begin_layout Plain Layout
+
+                 tick label style = {font = 
+\backslash
+tiny}]
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+draw[->] (0, 0) -- (53:12) node [right] {$A (12)$};
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+draw[->] (0, 0) -- (-40:15) node [above right] {$B (15)$};
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+draw[->] (0, 0) -- (240:6) node [below left] {$C (6)$};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+draw[<->] (0, 5) node [above right] {$37^
+\backslash
+circ$} arc (90:53:5);
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+draw[<->] (5, 0) node [below left] {$40^
+\backslash
+circ$} arc (0:-40:5);
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+draw[<->] (-5, 0) node [below right] {$60^
+\backslash
+circ$} arc (180:240:5) ;
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+end{axis}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Soluciones
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Exprese los vectores del problema anterior en términos de los vectores unitarios
+ 
+\begin_inset Formula $i$
+\end_inset
+
+ y 
+\begin_inset Formula $j$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Soluciones
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A\approx7,22i+9,58j$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $B\approx11,49i-9,64j$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $C\approx-3i-5,2j$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Con los vectores 
+\begin_inset Formula $A$
+\end_inset
+
+ y 
+\begin_inset Formula $B$
+\end_inset
+
+ de la figura:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Preview
+
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+begin{axis}[xmin = -12, xmax = 18, ymin = 0, ymax = 12,
+\end_layout
+
+\begin_layout Plain Layout
+
+                 axis lines = middle, axis equal,
+\end_layout
+
+\begin_layout Plain Layout
+
+                 tick label style = {font = 
+\backslash
+tiny}]
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+draw[->, thick] (0, 0) -- (37:18) node [above] {$B (18)$};
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+draw[->, thick] (0, 0) -- (180:12) node [above right] {$A (12)$};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+draw[<->] (5, 0) node [above right] {$37^
+\backslash
+circ$} arc (0:37:5);
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+end{axis}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Exprese los vectores de la figura en términos de los vectores unitarios
+ 
+\begin_inset Formula $i$
+\end_inset
+
+ y 
+\begin_inset Formula $j$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+A partir de dibujos a escala, obtenga el módulo y la dirección de
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $A+B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A-B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $-A-B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $-A+B$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Resuelva en inciso anterior a partir de las componentes cartesianas de los
+ vectores.
+\end_layout
+
+\begin_layout Paragraph
+Soluciones
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Preview
+
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+begin{axis}[xmin = -32, xmax = 35, ymin = -15, ymax = 15,
+\end_layout
+
+\begin_layout Plain Layout
+
+                 axis lines = middle, axis equal,
+\end_layout
+
+\begin_layout Plain Layout
+
+                 tick label style = {font = 
+\backslash
+tiny}]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+draw[->, thick] (0, 0) -- (37:18);
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+draw[->, thick] (0, 0) -- (180:12);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+draw[<->] (5, 0) node [above right] {$37^
+\backslash
+circ$} arc (0:37:5);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+       
+\backslash
+draw[->, dashed, blue] (-12,0) -- (2.38, 10.83);
+\end_layout
+
+\begin_layout Plain Layout
+
+       
+\backslash
+draw[->, dashed, red] (-12,0) -- (-26.38, -10.83);
+\end_layout
+
+\begin_layout Plain Layout
+
+       
+\backslash
+draw[->, dashed, green] (12,0) -- (-2.38, -10.83);
+\end_layout
+
+\begin_layout Plain Layout
+
+       
+\backslash
+draw[->, dashed, yellow] (12,0) -- (26.38, 10.83);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+       
+\backslash
+draw[->, thick, blue] (0,0) -- (2.38, 10.83) node [above right] {$A+B$};
+\end_layout
+
+\begin_layout Plain Layout
+
+       
+\backslash
+draw[->, thick, red] (0,0) -- (-26.38, -10.83) node [below] {$A-B$};
+\end_layout
+
+\begin_layout Plain Layout
+
+       
+\backslash
+draw[->, thick, green] (0,0) -- (-2.38, -10.83) node [below] {$-A-B$};
+\end_layout
+
+\begin_layout Plain Layout
+
+       
+\backslash
+draw[->, thick, yellow] (0,0) -- (26.38, 10.83) node [above] {$-A+B$};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+end{axis}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Considere un sistema cartesiano donde el eje 
+\begin_inset Quotes fld
+\end_inset
+
+x
+\begin_inset Quotes frd
+\end_inset
+
+ apunta al este y el eje 
+\begin_inset Quotes fld
+\end_inset
+
+y
+\begin_inset Quotes frd
+\end_inset
+
+ apunta al norte.
+ Una persona parte del origen del sistema cartesiano, camina 
+\begin_inset Formula $60m$
+\end_inset
+
+ hacia el este, 
+\begin_inset Formula $80m$
+\end_inset
+
+ hacia el norte, 
+\begin_inset Formula $20m$
+\end_inset
+
+ hacia el oeste y 
+\begin_inset Formula $50m$
+\end_inset
+
+ hacia el sur.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Paragraph
+Soluciones
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Paragraph
+Soluciones
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Paragraph
+Soluciones
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Standard
+COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Paragraph
+Soluciones
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Paragraph
+Soluciones
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Paragraph
+Soluciones
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\begin_layout Enumerate
+COMPLETAR.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Determina gráfica y analíticamente la fuerza resultante del siguiente sistema
+ de fuerzas y la fuerza equilibrante para el mismo.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Preview
+
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+pgfplotsset{ticks=none} 
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+begin{axis}[xmin = -20, xmax = 20, ymin = -20, ymax = 25,
+\end_layout
+
+\begin_layout Plain Layout
+
+                 axis lines = middle, axis equal,
+\end_layout
+
+\begin_layout Plain Layout
+
+                 axis line style = {draw = none}]
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+draw[->] (0, 0) -- (30:15) node [right] {$F_1$};
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+draw[->] (0, 0) -- (105:21) node [above left] {$F_2$};
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+draw[->] (0, 0) -- (155:18) node [left] {$F_3$};
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+draw[->] (0, 0) -- (285:13) node [right] {$F_4$};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+draw[dashed] (5, 0)  arc (0:30:5);
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+draw[dashed] (7, 0) arc (0:105:7);
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+draw[dashed] (9, 0) arc (0:155:9);
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+draw[dashed] (11, 0) arc (0:285:11);
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+end{axis}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Dadas las siguientes fuerzas:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+COMPLETAR.
+\end_layout
+
+\begin_layout Itemize
+COMPLETAR.
+\end_layout
+
+\begin_layout Standard
+Determine el valor de la fuerza resultante del sistema de fuerzas, sus component
+es rectangulares y el ángulo que forma con la dirección positiva del eje
+ x.
+\end_layout
+
+\begin_layout Paragraph
+Solución
+\end_layout
+
+\begin_layout Standard
+COMPLETAR.
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
